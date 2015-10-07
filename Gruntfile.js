@@ -86,6 +86,10 @@ module.exports = function (grunt) {
                 connect.static('./bower_components')
               ),
               connect().use(
+                  '/lib',
+                  connect.static('./lib')
+              ),
+              connect().use(
                 '/app/styles',
                 connect.static('./app/styles')
               ),
@@ -104,6 +108,10 @@ module.exports = function (grunt) {
               connect().use(
                 '/bower_components',
                 connect.static('./bower_components')
+              ),
+              connect().use(
+                  '/lib',
+                  connect.static('./lib')
               ),
               connect.static(appConfig.app)
             ];
@@ -397,7 +405,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*',
             'i18n/**/*.json',
-            'partials/**/*.html'
+            'partials/**/*.html',
+            'lib/**/*.js'
           ]
         }, {
           expand: true,

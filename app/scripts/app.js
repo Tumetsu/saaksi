@@ -22,6 +22,7 @@ angular
         'lodash',
         '720kb.datepicker',
         'saaksiApp.dailyWeather',
+        'saaksiApp.metolib',
         'pascalprecht.translate'
     ])
     .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider) {
