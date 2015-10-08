@@ -1,66 +1,247 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css(.) styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:css(.tmp) styles/main.css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+</head>
   <body ng-app="saaksiApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
+  	<!--[if lte IE 8]>
+	  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+    <a href="https://github.com/Tumetsu/saaksi"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <div class="topbar">
+
+        <div class="row">
+            <div class="large-12 columns">
+
+                <nav class="top-bar" data-topbar>
+                    <ul class="title-area">
+
+                        <li class="name">
+                            <h1>
+                                <a href="#">
+                                    Saaksi
+                                </a>
+                            </h1>
+                        </li>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+                    </ul>
+
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Statistics</a></li>
+                        </ul>
+
+                    </section>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+        <div class="explanation-box">
+            <div class="row" >
+
+                <div class="large-12 columns">
+                    <!-- Explanation div? -->
+                    <div>
+                        <h2>Looking for Finnish weather data in spreadsheet compatible format?</h2>
+                        <p>With Saaksi you are able to download open weather data of Finnish Meteorological Institute without
+                            programming knowledge. Choose a topic of interest below to begin.</p>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+
+        <div class="row" style="padding-top: 2em; padding-bottom: 2em">
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-4 small-6 columns">
+                        <div class="card">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="/images/dailyweatherThumb.jpg"/>
+                                    <span class="title">Daily weather</span>
+                                </div>
+                            </a>
+                            <div class="content">
+                                <p>Access FMI's daily weather observations from stations in Finland.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="large-4 small-6 columns">
+                        <div class="card">
+                            <a href="#">
+                            <div class="image">
+                                <img src="/images/seaThumb.jpg"/>
+                                <span class="title">Sea level</span>
+                            </div>
+                            </a>
+                            <div class="content">
+                                <p>Access FMI's daily sea level observations from stations in Finland.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="large-4 small-6 columns">
+                        <div class="card">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="/images/airQualityThumb.jpg"/>
+                                    <span class="title">Air quality</span>
+                                </div>
+                            </a>
+                            <div class="content">
+                                <p>Access FMI's air quality observations from stations in Finland.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="row">
+
+
+
+                    <div class="large-8 columns">
+                        <div class="panel radius">
+
+                            <div class="row">
+                                <div class="large-6 small-6 columns">
+
+                                    <h4>About</h4><hr/>
+                                    <h5 class="subheader">Saaksi is a free open-source tool for downloading Finnish Meteorological data.
+                                    </h5>
+
+                                    <div class="show-for-small" align="center">
+                                        <a href="#" class="small radius button">Call To Action!</a><br>
+
+                                        <a href="#" class="small radius button">Call To Action!</a>
+                                    </div>
+
+                                </div>
+                                <div class="large-6 small-6 columns">
+
+                                    <p>Saaksi is continuum to <a href="http://tumetsu.github.io/FMI-weather-downloader/">earlier desktop tool</a> for downloading Finnish weather data for research purposes. FMI
+                                        provides open weather data through programmable API but not a service for non-programmers to easily access the data. Saaksi strives to fill this need.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="large-4 columns hide-for-small">
+
+                        <h4>Get In Touch!</h4><hr/>
+
+                        <a class="large button expand" href="#">
+                            Call To Action!
+                        </a>
+
+                        <a class="large button expand" href="#">
+                            Call To Action!
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <p><a href="https://github.com/Tumetsu/saaksi">Developed by Tuomas Salmi 2015</a>, <a href="https://ilmatieteenlaitos.fi/avoin-data">data provided by FMI</a></p>
+                    </div>
+                    <div class="large-6 columns">
+                        <ul class="inline-list right">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+    <!-- We'll also add some navigation:
     <div ui-view></div>
-    <!-- We'll also add some navigation: -->
     <a ui-sref="state1">State 1</a>
-    <a ui-sref="state2">State 2</a>
+    <a ui-sref="state2">State 2</a> -->
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	 <script>
+	   !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+	   (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+	   r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+	   }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+	   ga('create', 'UA-XXXXX-X');
+	   ga('send', 'pageview');
+	</script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="bower_components/foundation/js/foundation.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-messages/angular-messages.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+	<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="bower_components/foundation/js/foundation.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/main.js"></script>
+		<script src="scripts/controllers/about.js"></script>
+		<!-- endbuild -->
 </body>
 </html>
