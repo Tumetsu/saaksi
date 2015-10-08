@@ -1,11 +1,16 @@
 sudo: false
 language: node_js
 node_js:
-  - 'iojs'
-  - '0.12'
-  - '0.10'
+- iojs
+- '0.12'
+- '0.10'
 before_script:
-  - 'gem install sass --version "=3.4.18"'
-  - 'gem install compass --version "=1.0.3"'
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
+- gem install sass --version "=3.4.18"
+- gem install compass --version "=1.0.3"
+- npm install -g bower grunt-cli
+- bower install
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+env:
+  global:
+    secure: jgJ0zZVlgHFoZkYq3pggPTWt8TEphiN4tHhFLQFqm74bC7n9EfHrldg0TNMlkqcsXBSiqvPJOCdKCzYu9KCPc6+ResbhBVD0ZOAd2h+RfQSDH0i9X46bfjmd5MjQ35u+DYIG2UATSDNhK2IxfWUJyyGE+fJaP4+1kYpqhD6meVZcz5whgixadGJL33UjZvW5Ep1e8KIPw+tcFmAg16FXwGynVc6U1V7Z/kI1nJUiKaJ++BK/t84njUw4yuOAHR9e8S7TBm83Btj7AdsP6BpuyTAKbwQMIAQOjI25NHKANy4lJTTfVIQhFwSoNjB8vN0cvfYhtAgOpBHYBAIME5s+6W/2/XVu2i5WitTkMToxsiURUpnq6bXyi+7gbJIGKRm93TrqWlFVGG9RtC1oWlgCEUpz1IkhoBvSglOaGQQi/qsHieKo2W79VeOf3zEQtG47Pzwth+S7XXZVzm8IIK2wn03YJWIoTlRFGuCFHPl3n5Ugao2w+BJ8Vy73FjagfHbutDIHfDE4S6FHmRGOs5xEgWEkTz1UNQ/A9zbLwyBsdiDTRnLU3O0zBf7bSNo3IDTCWRJIWIwYOhFGJgzNJ+NQyNAMSNFBX3+aJEb7nPu+r2DUPa/XdXo05w6fWveugaeXYvAsRED5hqoDgEdU98cqSEcKKfp4R0LJlebyO1xqZpk=
