@@ -2,22 +2,16 @@
 
 set -o errexit -o nounset
 
-rev=$(git rev-parse --short HEAD)
+rm -rf dist || exit 0;
+mkdir dist;
+
 grunt   #build the project
+
 cd dist
-
 git init
-git config user.name "Tuomas Salmi"
-git config user.email "travisCI@example.com"
+git config user.name "Travis CI"
+git config user.email "<you>@<your-email>"
 
-git remote add upstream "https://$GH_TOKEN@github.com/Tumetsu/saaksi"
-git fetch upstream
-git reset upstream/gh-pages
-
-#echo "saaksi" > CNAME
-
-touch .
-
-git add -A .
-git commit -m "rebuild pages at ${rev}"
-git push -q upstream HEAD:gh-pages
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
