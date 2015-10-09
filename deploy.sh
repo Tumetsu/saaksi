@@ -8,7 +8,7 @@ cd dist
 
 git init
 git config user.name "Tuomas Salmi"
-git config user.email "salmi.tuomas@gmail.com"
+git config user.email "travisCI@example.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/Tumetsu/saaksi"
 git fetch upstream
