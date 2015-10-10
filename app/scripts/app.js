@@ -19,7 +19,9 @@ angular
         'ngTouch',
         'ui.router',
         'mm.foundation',
-        'lodash'
+        'lodash',
+        '720kb.datepicker',
+        'saaksiApp.dailyWeather'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         //
@@ -30,7 +32,8 @@ angular
         $stateProvider
             .state('dailyWeather', {
                 url: '/dailyweather',
-                templateUrl: 'partials/dailyweather.html'
+                templateUrl: 'partials/dailyweather.html',
+                controller: 'DailyWeatherCtrl'
             })
             .state('dailyWeather.list', {
                 url: 'list',
