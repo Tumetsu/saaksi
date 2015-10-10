@@ -18,7 +18,8 @@ angular
         'ngSanitize',
         'ngTouch',
         'ui.router',
-        'mm.foundation'
+        'mm.foundation',
+        'lodash'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         //
