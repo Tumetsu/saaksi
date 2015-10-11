@@ -38,13 +38,14 @@
                         </li>
                         <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
                     </ul>
-
+                    <!--
                     <section class="top-bar-section">
                         <ul class="left">
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Statistics</a></li>
                         </ul>
                     </section>
+                    -->
                 </nav>
             </div>
         </div>
@@ -55,9 +56,8 @@
                 <div class="large-12 columns">
                     <!-- Explanation div -->
                     <div>
-                        <h2>Looking for Finnish weather data in spreadsheet compatible format?</h2>
-                        <p>With Saaksi you are able to download open weather data of Finnish Meteorological Institute without
-                            programming knowledge. Choose a topic of interest below to begin.</p>
+                        <h2 translate>HOME.HEADER</h2>
+                        <p translate>HOME.EXPLANATION</p>
                     </div>
                 </div>
             </div><br>
@@ -78,11 +78,11 @@
                             <a ui-sref="dailyWeather">
                                 <div class="image">
                                     <img src="./images/dailyweatherThumb.jpg"/>
-                                    <span class="title">Daily weather</span>
+                                    <span class="title" translate>HOME.TOPICS.DAILYWEATHER.HEADER</span>
                                 </div>
                             </a>
                             <div class="content">
-                                <p>Access FMI's daily weather observations from stations in Finland.</p>
+                                <p translate>HOME.TOPICS.DAILYWEATHER.DESCRIPTION</p>
                             </div>
                         </div>
                     </div>
@@ -92,11 +92,11 @@
                             <a ui-sref="seaLevel">
                             <div class="image">
                                 <img src="./images/seaThumb.jpg"/>
-                                <span class="title">Sea level</span>
+                                <span class="title" translate>HOME.TOPICS.SEALEVELS.HEADER</span>
                             </div>
                             </a>
                             <div class="content">
-                                <p>Access FMI's daily sea level observations from stations in Finland.</p>
+                                <p translate>HOME.TOPICS.SEALEVELS.DESCRIPTION</p>
                             </div>
                         </div>
                     </div>
@@ -106,11 +106,11 @@
                             <a ui-sref="airQuality">
                                 <div class="image">
                                     <img src="./images/airQualityThumb.jpg"/>
-                                    <span class="title">Air quality</span>
+                                    <span class="title" translate>HOME.TOPICS.AIRQUALITY.HEADER</span>
                                 </div>
                             </a>
                             <div class="content">
-                                <p>Access FMI's air quality observations from stations in Finland.</p>
+                                <p translate>HOME.TOPICS.AIRQUALITY.DESCRIPTION</p>
                             </div>
                         </div>
                     </div>
@@ -132,8 +132,8 @@
                             <div class="row">
                                 <div class="large-6 small-6 columns">
 
-                                    <h4>About</h4><hr/>
-                                    <h5 class="subheader">Saaksi is a free open-source tool for downloading Finnish Meteorological data.
+                                    <h4 translate>HOME.ABOUT.HEADER</h4><hr/>
+                                    <h5 class="subheader" translate>HOME.ABOUT.SHORT
                                     </h5>
 
                                     <div class="show-for-small" align="center">
@@ -144,10 +144,7 @@
 
                                 </div>
                                 <div class="large-6 small-6 columns">
-
-                                    <p>Saaksi is continuum to <a href="http://tumetsu.github.io/FMI-weather-downloader/">earlier desktop tool</a> for downloading Finnish weather data for research purposes. FMI
-                                        provides open weather data through programmable API but not a service for non-programmers to easily access the data. Saaksi strives to fill this need.
-                                    </p>
+                                    <p translate>HOME.ABOUT.LONG</p>
                                 </div>
 
                             </div>
@@ -178,7 +175,7 @@
                 <hr>
                 <div class="row">
                     <div class="large-6 columns">
-                        <p><a href="https://github.com/Tumetsu/saaksi">Developed by Tuomas Salmi 2015</a>, <a href="https://ilmatieteenlaitos.fi/avoin-data">data provided by FMI</a></p>
+                        <p translate>HOME.FOOTER.INFO</p>
                     </div>
                     <div class="large-6 columns">
                         <ul class="inline-list right">
@@ -235,6 +232,8 @@
 	<script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
 	<script src="bower_components/lodash/lodash.js"></script>
 	<script src="bower_components/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+	<script src="bower_components/angular-translate/angular-translate.js"></script>
+	<script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 

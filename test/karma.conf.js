@@ -41,6 +41,8 @@ module.exports = function(config) {
       'bower_components/angular-foundation/mm-foundation-tpls.js',
       'bower_components/lodash/lodash.js',
       'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
+      'bower_components/angular-translate/angular-translate.js',
+      'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
         "app/scripts/**/*Module.js",

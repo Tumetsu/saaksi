@@ -21,9 +21,22 @@ angular
         'mm.foundation',
         'lodash',
         '720kb.datepicker',
-        'saaksiApp.dailyWeather'
+        'saaksiApp.dailyWeather',
+        'pascalprecht.translate'
     ])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider) {
+        $translatePartialLoaderProvider.addPart('home');
+        $translateProvider.useLoader('$translatePartialLoader', {
+            urlTemplate: '../i18n/{part}/{lang}.json'
+        });
+
+        $translateProvider
+            .preferredLanguage('fi')
+            .fallbackLanguage('en');
+        //$translateProvider.determinePreferredLanguage();
+        //$translateProvider.preferredLanguage('en');
+
+
         //
         // For any unmatched url, redirect to /state1
         $urlRouterProvider.otherwise("/");
@@ -64,4 +77,10 @@ angular
                     $scope.items = ["A", "List", "Of", "Items"];
                 }
             });
+    })
+    .run(function ($rootScope, $translate) {
+        //listen translation changes and refresh them when new partials are loaded
+        $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+            $translate.refresh();
+        });
     });
