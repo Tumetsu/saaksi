@@ -1,5 +1,10 @@
 <!-- partials/dailyweather.html -->
 <h1>Daily weather (WORK IN PROGRESS)</h1>
 <hr/>
+
+<datepicker date-min-limit="{{dateMinLimit}}" date-max-limit="{{dateMaxLimit}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+    <input ng-model="date" type="text"/>
+</datepicker>
+
 <a ui-sref="dailyWeather.list">Show List</a>
 <div ui-view></div>
