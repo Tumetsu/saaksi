@@ -23,30 +23,41 @@ angular
     .config(function ($stateProvider, $urlRouterProvider) {
         //
         // For any unmatched url, redirect to /state1
-        $urlRouterProvider.otherwise("/state1");
+        $urlRouterProvider.otherwise("/");
         //
         // Now set up the states
         $stateProvider
-            .state('state1', {
-                url: '/state1',
-                templateUrl: 'partials/state1.html'
+            .state('dailyWeather', {
+                url: '/dailyweather',
+                templateUrl: 'partials/dailyweather.html'
             })
-            .state('state1.list', {
+            .state('dailyWeather.list', {
                 url: 'list',
                 templateUrl: 'partials/State1.list.html',
                 controller: function($scope) {
                     $scope.items = ["A", "List", "Of", "Items"];
                 }
             })
-            .state('state2', {
-                url: "/state2",
-                templateUrl: "partials/state2.html"
+            .state('seaLevel', {
+                url: "/sealevel",
+                templateUrl: "partials/sealevel.html"
             })
-            .state('state2.list', {
+            .state('sealevel.list', {
                 url: "/list",
                 templateUrl: "partials/state2.list.html",
                 controller: function($scope) {
                     $scope.things = ["A", "Set", "Of", "Things"];
+                }
+            })
+            .state('airQuality', {
+                url: '/airquality',
+                templateUrl: 'partials/airquality.html'
+            })
+            .state('airQuality.list', {
+                url: 'list',
+                templateUrl: 'partials/State1.list.html',
+                controller: function($scope) {
+                    $scope.items = ["A", "List", "Of", "Items"];
                 }
             });
     });
