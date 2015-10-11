@@ -2,7 +2,7 @@
     "HOME": {
         "HEADER": "Looking for Finnish weather data in spreadsheet compatible format?",
         "EXPLANATION": "With Saaksi you are able to download open weather data of Finnish Meteorological Institute without programming knowledge. Choose a topic of interest below to begin.",
-
+        "CHANGELANG": "Suomeksi",
         "TOPICS": {
             "DAILYWEATHER" : {
                 "HEADER": "Daily weather",
@@ -24,6 +24,11 @@
             "HEADER": "About",
             "SHORT": "Saaksi is a free open-source tool for downloading Finnish Meteorological data.",
             "LONG": "Saaksi is continuum to <a href='http://tumetsu.github.io/FMI-weather-downloader/'>earlier desktop tool</a> for downloading Finnish weather data for research purposes. FMI provides open weather data through programmable API but not a service for non-programmers to easily access the data. Saaksi strives to fill this need."
+        },
+
+        "OTHER": {
+            "NOTHING": "Nothing yet",
+            "BUTTON": "Button"
         },
 
         "FOOTER": {

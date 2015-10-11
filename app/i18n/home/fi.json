@@ -2,6 +2,7 @@
     "HOME": {
         "HEADER": "Etsitkö suomalaista säädataa Excel-yhteensopivassa muodossa?",
         "EXPLANATION": "Saaksilla voit ladata Suomen Ilmatieteenlaitoksen avoimia säähavaintoaineistoja ilman ohjelmointiosaamista. Aloita valitsemalla haluamasi aihe.",
+        "CHANGELANG": "In English",
 
         "TOPICS": {
             "DAILYWEATHER" : {
@@ -24,6 +25,11 @@
             "HEADER": "Palvelu",
             "SHORT": "Saaksi on ilmainen avoimen lähdekoodin työkalu Suomen Ilmatieteenlaitoksen avoimen datan lataamiseen.",
             "LONG": "Saaksi on jatkumoa <a href='http://tumetsu.github.io/FMI-weather-downloader/'>varhaisemmalle työpöytäsovellukselle</a> suomalaisen säädatan lataamiseen tutkimuskäyttöön. Ilmatieteenlaitos tarjoaa avointa säädataa ohjelmallisen rajapinnan kautta, muttei palvelua saavuttaa kyseistä dataa helposti ilman ohjelmointitaitamusta. Saaksi pyrkii täyttämään tämän tarpeen."
+        },
+
+        "OTHER": {
+            "NOTHING": "Ei mitään vielä",
+            "BUTTON": "Nappula"
         },
 
         "FOOTER": {
