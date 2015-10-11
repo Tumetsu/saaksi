@@ -1,3 +1,4 @@
+"use strict";
 angular.module('saaksiApp')
     .controller('AppCtrl', ['$scope', '$translate', function ($scope, $translate) {
         $scope.changeLanguage = function() {
@@ -7,6 +8,6 @@ angular.module('saaksiApp')
             } else if (lang === 'en') {
                 lang = 'fi';
             }
-            $translate.proposedLanguage() || $translate.use(lang);
+            $translate.use(lang);
         };
     }]);
