@@ -1,0 +1,40 @@
+{
+    "HOME": {
+        "HEADER": "Looking for Finnish weather data in spreadsheet compatible format?",
+        "EXPLANATION": "With Saaksi you are able to download open weather data of Finnish Meteorological Institute without programming knowledge. Choose a topic of interest below to begin.",
+        "CHANGELANG": "Suomeksi",
+        "TOPICS": {
+            "DAILYWEATHER" : {
+                "HEADER": "Daily weather",
+                "DESCRIPTION": "Access FMI's daily weather observations from stations in Finland."
+            },
+
+            "SEALEVELS" : {
+                "HEADER": "Sea levels",
+                "DESCRIPTION": "Access FMI's daily sea level observations from stations in Finland."
+            },
+
+            "AIRQUALITY" : {
+                "HEADER": "Air quality",
+                "DESCRIPTION": "Access FMI's air quality observations from stations in Finland."
+            }
+        },
+
+        "ABOUT": {
+            "HEADER": "About",
+            "SHORT": "Saaksi is a free open-source tool for downloading Finnish Meteorological data.",
+            "LONG": "Saaksi is continuum to <a href='http://tumetsu.github.io/FMI-weather-downloader/'>earlier desktop tool</a> for downloading Finnish weather data for research purposes. FMI provides open weather data through programmable API but not a service for non-programmers to easily access the data. Saaksi strives to fill this need."
+        },
+
+        "OTHER": {
+            "NOTHING": "Nothing yet",
+            "BUTTON": "Button"
+        },
+
+        "FOOTER": {
+            "INFO": "<a href='https://github.com/Tumetsu/saaksi'>Developed by Tuomas Salmi 2015</a>, <a href='https://ilmatieteenlaitos.fi/avoin-data'>data provided by FMI</a>"
+        }
+    }
+
+
+}
