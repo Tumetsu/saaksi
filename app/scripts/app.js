@@ -27,6 +27,7 @@ angular
     .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider) {
         $translatePartialLoaderProvider.addPart('home');
         $translateProvider.useLocalStorage();
+        $translateProvider.useSanitizeValueStrategy('sanitize');
         $translateProvider.useLoader('$translatePartialLoader', {
             urlTemplate: './i18n/{part}/{lang}.json'
         });
