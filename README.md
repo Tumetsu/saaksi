@@ -1,5 +1,5 @@
 # Saaksi
-[![Build Status](https://travis-ci.org/Tumetsu/saaksi.svg)](https://travis-ci.org/Tumetsu/saaksi)
+[![Build Status](https://travis-ci.org/Tumetsu/saaksi.svg?branch=master)](https://travis-ci.org/Tumetsu/saaksi)
 
 Saaksi is a web service which should in future let users to download FMI's weatherdata online. It will be the next development from earlier [FMI Weather downloader](https://github.com/Tumetsu/FMI-weather-downloader) providing online UI. The plan is to use [FMI's Metolib library](https://github.com/fmidev/metolib) for pulling the data to client.
 
