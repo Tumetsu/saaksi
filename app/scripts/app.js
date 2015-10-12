@@ -28,7 +28,7 @@ angular
         $translatePartialLoaderProvider.addPart('home');
         $translateProvider.useLocalStorage();
         $translateProvider.useLoader('$translatePartialLoader', {
-            urlTemplate: '../i18n/{part}/{lang}.json'
+            urlTemplate: './i18n/{part}/{lang}.json'
         });
 
         $translateProvider
@@ -45,45 +45,45 @@ angular
         // Now set up the states
         $stateProvider
             .state('app', {
-                templateUrl: 'partials/common/app.html',
+                templateUrl: 'views/app.html',
                 controller: 'AppCtrl'
             })
 
             .state('app.download', {
                 url: '',
-                templateUrl: 'partials/download/download.html'
+                templateUrl: 'views/download/download.html'
             })
 
             .state('app.download.dailyWeather', {
                 url: '/dailyweather',
-                templateUrl: 'partials/dailyweather.html',
+                templateUrl: 'partials/download/dailyweather.html',
                 controller: 'DailyWeatherCtrl'
             })
             .state('app.download.dailyWeather.list', {
                 url: 'list',
-                templateUrl: 'partials/State1.list.html',
+                templateUrl: 'partials/download/State1.list.html',
                 controller: function($scope) {
                     $scope.items = ["A", "List", "Of", "Items"];
                 }
             })
             .state('app.download.seaLevel', {
                 url: "/sealevel",
-                templateUrl: "partials/sealevel.html"
+                templateUrl: "partials/download/sealevel.html"
             })
             .state('app.download.sealevel.list', {
                 url: "/list",
-                templateUrl: "partials/state2.list.html",
+                templateUrl: "partials/download/state2.list.html",
                 controller: function($scope) {
                     $scope.things = ["A", "Set", "Of", "Things"];
                 }
             })
             .state('app.download.airQuality', {
                 url: '/airquality',
-                templateUrl: 'partials/airquality.html'
+                templateUrl: 'partials/download/airquality.html'
             })
             .state('app.download.airQuality.list', {
                 url: 'list',
-                templateUrl: 'partials/State1.list.html',
+                templateUrl: 'partials/download/State1.list.html',
                 controller: function($scope) {
                     $scope.items = ["A", "List", "Of", "Items"];
                 }
