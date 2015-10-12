@@ -1,9 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- iojs
-- '0.12'
-- '0.10'
+- '4.1'
 before_script:
 - gem install sass --version "=3.4.18"
 - gem install compass --version "=1.0.3"
