@@ -1,0 +1,17 @@
+{
+    "APIKEY": {
+        "HEADER": "Tunnisteavain",
+        "EXPLANATION": "Ennen Saaksin käyttöä tarvitset Ilmatieteenlaitoksen tunnisteavaimen. Seuraa alla olevia ohjeita ja kopioi tunnisteavaimesi alla olevaan kenttään.",
+        "INSTRUCTIONS": {
+            "1": "Avaa <a href='https://ilmatieteenlaitos.fi/avoin-data'>Ilmatieteenlaitoksen avoimen datan sivu</a> ja kirjaudu tai rekisteröidy palveluun.",
+            "2": "\"Omat tiedot\" sivun pohjalla on kohta \"tunnisteavain (fmi-apikey)\".",
+            "3": "Kopioi tunnisteavain alla olevaan kenttään.",
+
+            "SAVEINFO": "Tunnisteavain tallennetaan selaimeesi, ei Saaksin palvelimille",
+            "MORE": "<a href='http://tumetsu.github.io/FMI-weather-downloader/quickstart/finnishguide.html'>Yksityiskohtaisemmat ohjeet</a>",
+            "SAVE": "Jatka"
+        },
+
+        "INVALIDKEY": "Virheellinen tunnisteavain. Tarkista oikeinkirjoitus."
+    }
+}

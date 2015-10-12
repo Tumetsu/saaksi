@@ -20,24 +20,29 @@ angular
         'ui.router',
         'mm.foundation',
         'lodash',
+        'pascalprecht.translate',
+        'LocalStorageModule',
         '720kb.datepicker',
         'saaksiApp.dailyWeather',
         'saaksiApp.metolib',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'saaksiApp.apiKey'
     ])
-    .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider, localStorageServiceProvider) {
         $translatePartialLoaderProvider.addPart('home');
         $translateProvider.useLocalStorage();
         $translateProvider.useSanitizeValueStrategy('sanitize');
         $translateProvider.useLoader('$translatePartialLoader', {
             urlTemplate: './i18n/{part}/{lang}.json'
         });
-
         $translateProvider
             .preferredLanguage('fi')
             .fallbackLanguage('en');
-        //$translateProvider.determinePreferredLanguage();
-        //$translateProvider.preferredLanguage('en');
+
+        localStorageServiceProvider
+            .setPrefix('saaksi')
+            .setStorageType('localStorage');
+
 
 
         //
@@ -54,6 +59,12 @@ angular
             .state('app.download', {
                 url: '',
                 templateUrl: 'views/download/download.html'
+            })
+
+            .state('app.download.apikey', {
+                url: '/apikey',
+                templateUrl: 'partials/download/apikey.html',
+                controller: 'ApikeyCtrl'
             })
 
             .state('app.download.dailyWeather', {
