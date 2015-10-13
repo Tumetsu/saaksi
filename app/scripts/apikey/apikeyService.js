@@ -1,6 +1,6 @@
 "use strict";
 angular.module('saaksiApp.apiKey')
-    .service('apikeyService', ['localStorageService', function (localStorageService, metolibService) {
+    .service('apikeyService', ['localStorageService', function (localStorageService) {
 
         this.getStoredKey = function() {
             return localStorageService.get('apikey');
