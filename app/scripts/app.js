@@ -20,11 +20,12 @@ angular
         'ui.router',
         'mm.foundation',
         'lodash',
+        'metolib',
         'pascalprecht.translate',
         'LocalStorageModule',
         '720kb.datepicker',
         'saaksiApp.dailyWeather',
-        'saaksiApp.metolib',
+        'saaksiApp.fmi',
         'pascalprecht.translate',
         'saaksiApp.apiKey'
     ])
