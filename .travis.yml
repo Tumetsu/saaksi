@@ -7,7 +7,9 @@ before_script:
 - gem install compass --version "=1.0.3"
 - npm install -g bower grunt-cli
 - bower install
-script: bash ./deploy.sh
+script: bash ./build.sh
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
 env:
   global:
     - GH_REF: github.com/tumetsu/saaksi.git
