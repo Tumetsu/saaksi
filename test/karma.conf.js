@@ -21,33 +21,33 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [// bower:js
-            'bower_components/modernizr/modernizr.js',
-            'bower_components/jquery/dist/jquery.js',
-            'bower_components/angular/angular.js',
-            'bower_components/angular-animate/angular-animate.js',
-            'bower_components/angular-aria/angular-aria.js',
-            'bower_components/angular-cookies/angular-cookies.js',
-            'bower_components/angular-messages/angular-messages.js',
-            'bower_components/angular-resource/angular-resource.js',
-            'bower_components/angular-route/angular-route.js',
-            'bower_components/angular-sanitize/angular-sanitize.js',
-            'bower_components/angular-touch/angular-touch.js',
-            'bower_components/fastclick/lib/fastclick.js',
-            'bower_components/jquery.cookie/jquery.cookie.js',
-            'bower_components/jquery-placeholder/jquery.placeholder.js',
-            'bower_components/foundation/js/foundation.js',
-            'bower_components/angular-ui-router/release/angular-ui-router.js',
-            'bower_components/angular-foundation/mm-foundation-tpls.js',
-            'bower_components/lodash/lodash.js',
-            'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
-            'bower_components/angular-translate/angular-translate.js',
-            'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js',
-            'bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
-            'bower_components/angular-translate-storage-local/angular-translate-storage-local.js',
-            'bower_components/async/lib/async.js',
-            'bower_components/angular-local-storage/dist/angular-local-storage.js',
-            'bower_components/angular-mocks/angular-mocks.js',
-            // endbower
+'bower_components/modernizr/modernizr.js',
+'bower_components/jquery/dist/jquery.js',
+'bower_components/angular/angular.js',
+'bower_components/angular-animate/angular-animate.js',
+'bower_components/angular-aria/angular-aria.js',
+'bower_components/angular-cookies/angular-cookies.js',
+'bower_components/angular-messages/angular-messages.js',
+'bower_components/angular-resource/angular-resource.js',
+'bower_components/angular-route/angular-route.js',
+'bower_components/angular-sanitize/angular-sanitize.js',
+'bower_components/angular-touch/angular-touch.js',
+'bower_components/fastclick/lib/fastclick.js',
+'bower_components/jquery.cookie/jquery.cookie.js',
+'bower_components/jquery-placeholder/jquery.placeholder.js',
+'bower_components/foundation/js/foundation.js',
+'bower_components/angular-ui-router/release/angular-ui-router.js',
+'bower_components/angular-foundation/mm-foundation-tpls.js',
+'bower_components/lodash/lodash.js',
+'bower_components/angularjs-datepicker/dist/angular-datepicker.min.js',
+'bower_components/angular-translate/angular-translate.js',
+'bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js',
+'bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
+'bower_components/angular-translate-storage-local/angular-translate-storage-local.js',
+'bower_components/async/lib/async.js',
+'bower_components/angular-local-storage/dist/angular-local-storage.js',
+'bower_components/angular-mocks/angular-mocks.js',
+// endbower
             "app/lib/**/*.js",
             "app/scripts/**/*Module.js",
             "app/scripts/**/*.js",
@@ -77,7 +77,8 @@ module.exports = function(config) {
         // Which plugins to enable
         plugins: [
             "karma-phantomjs-launcher",
-            "karma-jasmine"
+            "karma-jasmine",
+            "karma-coverage"
         ],
 
         // Continuous Integration mode
@@ -90,7 +91,24 @@ module.exports = function(config) {
         // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
         logLevel: config.LOG_INFO,
 
+        // coverage reporter generates the coverage
+        reporters: ['progress', 'coverage'],
 
+        preprocessors: {
+            // source files, that you wanna generate coverage for
+            // do not include tests or libraries
+            // (these files will be instrumented by Istanbul)
+            'app/scripts/**/*.js': ['coverage']
+        },
+
+        // optionally, configure the reporter
+        coverageReporter: {
+            dir: './cov',
+            reporters: [
+                {type: 'html', subdir: 'report-html'},
+                {type: 'cobertura', subdir: 'report-cobertura', file: 'cobertura.xml'}
+            ]
+        }
 
         // Uncomment the following lines if you are using grunt's server to run the tests
         // proxies: {

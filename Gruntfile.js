@@ -25,6 +25,9 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  //used to create a coverage badge for Github
+  var badger = require('istanbul-cobertura-badger');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -406,13 +409,19 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*',
             'i18n/**/*.json',
             'partials/**/*.html',
-            'lib/**/*.js'
+            'lib/**/*.js',
+            'cov/**/*.html'
           ]
         }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          cwd: './cov',
+          dest: '<%= yeoman.dist %>/cov',
+          src: ['./**/*']
         }]
       },
       styles: {
@@ -447,6 +456,30 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.registerTask('badger', 'Create coverage badge to dist folder afetr build', function(target) {
+      var done = this.async();
+      var opts = {
+          //badgeFileName: "cobertura", // No extension, Defaults to "coverage"
+          destinationDir: __dirname + '/dist/cov/', // REQUIRED PARAMETER!
+              istanbulReportFile: __dirname + '/dist/cov/report-cobertura/cobertura.xml',
+              thresholds: {
+              // overall percent >= excellent, green badge
+              excellent: 90,
+                  // overall percent < excellent and >= good, yellow badge
+                  good: 65
+              // overall percent < good, red badge
+          }
+      };
+
+    badger(opts, function parsingResults(err, badgeStatus) {
+        if (err) {
+            console.log("An error occurred: " + err.message);
+        }
+        console.log("Badge successfully generated at " + badgeStatus.badgeFile.filePath);
+        console.log(badgeStatus);
+        done();
+    });
+  });
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -492,7 +525,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'badger'
   ]);
 
   grunt.registerTask('default', [

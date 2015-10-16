@@ -73,35 +73,17 @@ angular
                 templateUrl: 'partials/download/dailyweather.html',
                 controller: 'DailyWeatherCtrl'
             })
-            .state('app.download.dailyWeather.list', {
-                url: 'list',
-                templateUrl: 'partials/download/State1.list.html',
-                controller: function($scope) {
-                    $scope.items = ["A", "List", "Of", "Items"];
-                }
-            })
+
             .state('app.download.seaLevel', {
                 url: "/sealevel",
                 templateUrl: "partials/download/sealevel.html"
             })
-            .state('app.download.sealevel.list', {
-                url: "/list",
-                templateUrl: "partials/download/state2.list.html",
-                controller: function($scope) {
-                    $scope.things = ["A", "Set", "Of", "Things"];
-                }
-            })
+
             .state('app.download.airQuality', {
                 url: '/airquality',
                 templateUrl: 'partials/download/airquality.html'
-            })
-            .state('app.download.airQuality.list', {
-                url: 'list',
-                templateUrl: 'partials/download/State1.list.html',
-                controller: function($scope) {
-                    $scope.items = ["A", "List", "Of", "Items"];
-                }
             });
+
     })
     .run(function ($rootScope, $translate) {
         //listen translation changes and refresh them when new partials are loaded
