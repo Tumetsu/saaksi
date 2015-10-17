@@ -1,6 +1,6 @@
 'use strict';
 
-describe('fmiService', function () {
+describe('apikeyService', function () {
 
     // load the module
     beforeEach(module('saaksiApp'));
@@ -49,6 +49,16 @@ describe('fmiService', function () {
             done();
         });
 
+    });
+
+    describe('#removeApikey', function() {
+        it('remove the key from storage', function(done) {
+            aService.setKeyToStorage('keyToBesaved');
+            expect(localStorage.get('apikey')).toBe('keyToBesaved');
+            aService.removeApikey();
+            expect(localStorage.get('apikey')).toBe(null);
+            done();
+        });
     });
 
 });

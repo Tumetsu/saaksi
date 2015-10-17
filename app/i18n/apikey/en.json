@@ -10,7 +10,8 @@
 
             "SAVEINFO": "The API-key is saved on your browser, not on Saaksi's server.",
             "MORE": "<a href='http://tumetsu.github.io/FMI-weather-downloader/quickstart/englishguide.html'>More detailed instructions</a>",
-            "SAVE": "Continue"
+            "SAVE": "Continue",
+            "REMOVE": "Remove api-key"
         },
 
         "INVALIDKEY": "Invalid API-key. Check for typos."

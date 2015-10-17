@@ -71,23 +71,37 @@ angular
             .state('app.download.dailyWeather', {
                 url: '/dailyweather',
                 templateUrl: 'partials/download/dailyweather.html',
-                controller: 'DailyWeatherCtrl'
+                controller: 'DailyWeatherCtrl',
+                apikeyRequired: true
             })
 
             .state('app.download.seaLevel', {
                 url: "/sealevel",
-                templateUrl: "partials/download/sealevel.html"
+                templateUrl: "partials/download/sealevel.html",
+                apikeyRequired: true
             })
 
             .state('app.download.airQuality', {
                 url: '/airquality',
-                templateUrl: 'partials/download/airquality.html'
+                templateUrl: 'partials/download/airquality.html',
+                apikeyRequired: true
             });
 
     })
-    .run(function ($rootScope, $translate) {
+    .run(function ($rootScope, $state, $translate, apikeyService) {
         //listen translation changes and refresh them when new partials are loaded
         $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
             $translate.refresh();
+        });
+
+        //redirections
+        $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
+            if (toState.apikeyRequired) {
+                if (!apikeyService.getStoredKey()) {
+                    $rootScope.returnToState = toState.name;
+                    $state.transitionTo('app.download.apikey');
+                    event.preventDefault();
+                }
+            }
         });
     });

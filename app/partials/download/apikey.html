@@ -31,6 +31,7 @@
                         <p class="text-center"><small translate>APIKEY.INSTRUCTIONS.SAVEINFO</small>
                             <small translate>APIKEY.INSTRUCTIONS.MORE</small></p>
                         <button type="button" class="button" ng-click="setKey()" ng-disabled="apikeyForm.$invalid"  translate>APIKEY.INSTRUCTIONS.SAVE</button>
+                        <button type="button" class="button alert" ng-show="existingKey" ng-click="clearKey()" ng-disabled="apikeyForm.$invalid"  translate>APIKEY.INSTRUCTIONS.REMOVE</button>
 
                     </div>
                 </form>

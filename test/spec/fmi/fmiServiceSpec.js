@@ -5,6 +5,7 @@ describe('fmiService', function () {
     // load the module
     beforeEach(module('saaksiApp'));
     beforeEach(module('saaksiApp.fmi'));
+    beforeEach(module('templates'));
 
     var fService,
         $httpBackend;

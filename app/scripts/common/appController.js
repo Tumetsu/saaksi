@@ -5,7 +5,7 @@ angular.module('saaksiApp')
             var lang = $translate.proposedLanguage() || $translate.use();
             if (lang === 'fi') {
                 lang = 'en';
-            } else if (lang === 'en') {
+            } else {
                 lang = 'fi';
             }
             $translate.use(lang);

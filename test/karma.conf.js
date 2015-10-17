@@ -52,7 +52,9 @@ module.exports = function(config) {
             "app/scripts/**/*Module.js",
             "app/scripts/**/*.js",
             "test/mock/**/*.js",
-            "test/spec/**/*.js"
+            "test/spec/**/*.js",
+            "app/views/**/*.html",
+            "app/partials/**/*.html"
         ],
 
         // list of files / patterns to exclude
@@ -78,7 +80,8 @@ module.exports = function(config) {
         plugins: [
             "karma-phantomjs-launcher",
             "karma-jasmine",
-            "karma-coverage"
+            "karma-coverage",
+            "karma-ng-html2js-preprocessor"
         ],
 
         // Continuous Integration mode
@@ -89,7 +92,13 @@ module.exports = function(config) {
 
         // level of logging
         // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
+
+
+        ngHtml2JsPreprocessor: {
+            stripPrefix: "app/",
+            moduleName: 'templates'
+        },
 
         // coverage reporter generates the coverage
         reporters: ['progress', 'coverage'],
@@ -98,7 +107,9 @@ module.exports = function(config) {
             // source files, that you wanna generate coverage for
             // do not include tests or libraries
             // (these files will be instrumented by Istanbul)
-            'app/scripts/**/*.js': ['coverage']
+            'app/scripts/**/*.js': ['coverage'],
+            'app/views/**/*.html': ['ng-html2js'],
+            'app/partials/**/*.html': ['ng-html2js']
         },
 
         // optionally, configure the reporter
