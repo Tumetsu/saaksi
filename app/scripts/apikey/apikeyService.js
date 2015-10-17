@@ -10,4 +10,8 @@ angular.module('saaksiApp.apiKey')
             localStorageService.set('apikey', value);
         };
 
+        this.removeApikey = function() {
+            return localStorageService.remove('apikey');
+        };
+
     }]);

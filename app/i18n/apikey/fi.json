@@ -9,7 +9,8 @@
 
             "SAVEINFO": "Tunnisteavain tallennetaan selaimeesi, ei Saaksin palvelimille",
             "MORE": "<a href='http://tumetsu.github.io/FMI-weather-downloader/quickstart/finnishguide.html'>Yksityiskohtaisemmat ohjeet</a>",
-            "SAVE": "Jatka"
+            "SAVE": "Jatka",
+            "REMOVE": "Poista avain"
         },
 
         "INVALIDKEY": "Virheellinen tunnisteavain. Tarkista oikeinkirjoitus."

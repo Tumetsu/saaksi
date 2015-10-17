@@ -1,7 +1,8 @@
 "use strict";
 angular.module('saaksiApp.apiKey')
-    .controller('ApikeyCtrl', ['$scope', '$translatePartialLoader', 'apikeyService', 'fmiService', function ($scope, $translatePartialLoader, apikeyService, fmiService) {
+    .controller('ApikeyCtrl', ['$scope', '$rootScope', '$state', '$translatePartialLoader', 'apikeyService', 'fmiService', function ($scope, $rootScope, $state, $translatePartialLoader, apikeyService, fmiService) {
         $translatePartialLoader.addPart('apikey');
+        $scope.existingKey = Boolean(apikeyService.getStoredKey());
         $scope.apikey = apikeyService.getStoredKey();
         $scope.invalidKeyError = false;
 
@@ -18,8 +19,24 @@ angular.module('saaksiApp.apiKey')
                     //key is valid, save it to local storage
                     apikeyService.setKeyToStorage($scope.apikey);
                     $scope.invalidKeyError = false;
+                    redirect();
                 }
             });
-
         };
+
+        $scope.clearKey = function() {
+            apikeyService.removeApikey();
+            redirect();
+        };
+
+        function redirect() {
+            //go to another state
+            if($rootScope.returnToState && $rootScope.returnToState !== $state.current.name) {
+                $state.transitionTo($rootScope.returnToState);
+                $rootScope.returnToState = null;
+            } else {
+                $state.transitionTo('app.download');
+                $rootScope.returnToState = null;
+            }
+        }
     }]);
