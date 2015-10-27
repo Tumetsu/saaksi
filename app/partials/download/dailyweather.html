@@ -2,10 +2,27 @@
 <h1>Daily weather (WORK IN PROGRESS)</h1>
 <hr/>
 <p translate>HEADERS.STATIONS</p>
-<datepicker date-min-limit="{{dateMinLimit}}" date-max-limit="{{dateMaxLimit}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
-    <input ng-model="date" type="text"/>
-</datepicker>
 
+<div class="row">
+    <datepicker date-min-limit="{{dateMinLimit}}" date-max-limit="{{dateMaxLimit}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+        <input ng-model="date" type="text"/>
+    </datepicker>
+</div>
+
+<div class="row">
+    <angucomplete-alt id="ex1"
+                      placeholder="Search stations"
+                      pause="100"
+                      selected-object="selectedStation"
+                      local-data="stations"
+                      search-fields="name_fi"
+                      title-field="name_fi"
+                      minlength="1"
+                      input-class="form-control form-control-small"/>
+</div>
+<div class="" ng-show="selectedStation">
+    You selected <span class="bold-span">{{selectedStation.title}}</span>
+</div>
 <a ui-sref="dailyWeather.list">Show List</a>
 <div ui-view></div>
 <hr/>

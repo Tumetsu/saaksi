@@ -1,0 +1,3852 @@
+[
+    {
+        "name_en": "Alajärvi Möksy",
+        "lat": "63.09",
+        "datasets": {
+            "Säähavainnot: Alajärvi Möksy": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Alajärvi Möksy": {
+                "begin": "1996-06-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Alajärvi Möksy",
+        "lon": "24.26",
+        "fmisid": "101533",
+        "wmo": "2787"
+    },
+    {
+        "name_en": "Asikkala Pulkkilanharju",
+        "lat": "61.27",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Asikkala Pulkkilanharju": {
+                "begin": "1992-01-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Asikkala Pulkkilanharju": {
+                "begin": "2011-05-19T07:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Asikkala Pulkkilanharju",
+        "lon": "25.52",
+        "fmisid": "101185",
+        "wmo": "2727"
+    },
+    {
+        "name_en": "Enontekiö airport",
+        "lat": "68.36",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Enontekiö Hetta lentoasema": {
+                "begin": "1999-10-05T00:00:00Z",
+                "interval": 1,
+                "end": "2006-04-06T00:00:00Z"
+            }
+        },
+        "name_fi": "Enontekiö Hetta",
+        "lon": "23.43",
+        "fmisid": "101976",
+        "wmo": "2802"
+    },
+    {
+        "name_en": "Enontekiö Kilpisjärvi",
+        "lat": "69.05",
+        "datasets": {
+            "Säähavainnot: Enontekiö Kilpisjärvi kyläkeskus": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Enontekiö Kilpisjärvi kyläkeskus": {
+                "begin": "1978-12-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Enontekiö Kilpisjärvi Saana",
+        "lon": "20.79",
+        "fmisid": "102016",
+        "wmo": "2801"
+    },
+    {
+        "name_en": "Enontekiö Kilpisjärvi Saana",
+        "lat": "69.04",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Enontekiö Kilpisjärvi Saana": {
+                "begin": "1991-10-02T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Enontekiö Kilpisjärvi Saana": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Enontekiö lentoasema",
+        "lon": "20.85",
+        "fmisid": "102017",
+        "wmo": "2701"
+    },
+    {
+        "name_en": "Enontekiö Näkkälä",
+        "lat": "68.6",
+        "datasets": {
+            "Säähavainnot: Enontekiö Näkkälä": {
+                "begin": "2008-01-01T06:10:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Enontekiö Näkkälä": {
+                "begin": "1961-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Enontekiö Näkkälä",
+        "lon": "23.58",
+        "fmisid": "102019",
+        "wmo": "2726"
+    },
+    {
+        "name_en": "Espoo Nuuksio",
+        "lat": "60.29",
+        "datasets": {
+            "Säähavainnot: Espoo Nuuksio": {
+                "begin": "2014-06-13T09:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Espoo Nuuksio",
+        "lon": "24.57",
+        "fmisid": "852678",
+        "wmo": "2986"
+    },
+    {
+        "name_en": "Espoo Tapiola",
+        "lat": "60.18",
+        "datasets": {
+            "Säähavainnot: Espoo Tapiola": {
+                "begin": "2013-11-25T10:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Espoo Tapiola",
+        "lon": "24.79",
+        "fmisid": "874863",
+        "wmo": "2985"
+    },
+    {
+        "name_en": "Haapavesi Mustikkamäki",
+        "lat": "64.14",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Haapavesi Mustikkamäki": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Haapavesi Mustikkamäki": {
+                "begin": "2010-05-25T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Haapavesi Mustikkamäki",
+        "lon": "25.42",
+        "fmisid": "101695",
+        "wmo": "2797"
+    },
+    {
+        "name_en": "Hailuoto Keskikylä",
+        "lat": "65.02",
+        "datasets": {
+            "Säähavainnot: Hailuoto Keskikylä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hailuoto Ojakylä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hailuoto Keskikylä",
+        "lon": "24.73",
+        "fmisid": "101776",
+        "wmo": "2874"
+    },
+    {
+        "name_en": "Hailuoto Marjaniemi",
+        "lat": "65.04",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Hailuoto Marjaniemi": {
+                "begin": "1984-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Hailuoto Marjaniemi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Hailuoto Marjaniemi",
+        "lon": "24.56",
+        "fmisid": "101784",
+        "wmo": "2873"
+    },
+    {
+        "name_en": "Halsua Kanala Purola",
+        "lat": "63.45",
+        "datasets": {
+            "Säähavainnot: Halsua Kanala Purola": {
+                "begin": "2012-05-30T07:10:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Halsua Kanala Purola": {
+                "begin": "1967-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Halsua Kanala Purola",
+        "lon": "24.44",
+        "fmisid": "101528",
+        "wmo": "2725"
+    },
+    {
+        "name_en": "Hammarland Märket",
+        "lat": "60.3",
+        "datasets": {
+            "Säähavainnot: Hammarland Märket": {
+                "begin": "2008-01-11T09:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hammarland Märket": {
+                "begin": "1981-02-15T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hammarland Märket",
+        "lon": "19.13",
+        "fmisid": "100919",
+        "wmo": "2993"
+    },
+    {
+        "name_en": "Hanko Russarö",
+        "lat": "59.77",
+        "datasets": {
+            "Säähavainnot: Hanko Russarö": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hanko Russarö": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hanko Russarö",
+        "lon": "22.95",
+        "fmisid": "100932",
+        "wmo": "2982"
+    },
+    {
+        "name_en": "Hanko Tulliniemi",
+        "lat": "59.81",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Hanko Tulliniemi": {
+                "begin": "1990-09-29T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Hanko Tulliniemi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Hanko Tulliniemi",
+        "lon": "22.91",
+        "fmisid": "100946",
+        "wmo": "2746"
+    },
+    {
+        "name_en": "Hanko Tvärminne",
+        "lat": "59.84",
+        "datasets": {
+            "Säähavainnot: Hanko Tvärminne": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hanko Tvärminne": {
+                "begin": "1963-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hanko Tvärminne",
+        "lon": "23.25",
+        "fmisid": "100953",
+        "wmo": "2750"
+    },
+    {
+        "name_en": "Hattula Lepaa",
+        "lat": "61.11",
+        "datasets": {
+            "Säähavainnot: Hattula Lepaa": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hattula Lepaa": {
+                "begin": "2006-11-14T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hattula Lepaa",
+        "lon": "24.32",
+        "fmisid": "101151",
+        "wmo": "2704"
+    },
+    {
+        "name_en": "Heinola Asemantaus",
+        "lat": "61.2",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Heinola Asemantaus": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Heinola Asemantaus": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Heinola Asemantaus",
+        "lon": "26.05",
+        "fmisid": "101196",
+        "wmo": "2768"
+    },
+    {
+        "name_en": "Helsinki Harmaja",
+        "lat": "60.1",
+        "datasets": {
+            "Säähavainnot: Helsinki Harmaja": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Helsinki Harmaja": {
+                "begin": "2013-04-12T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Harmaja",
+        "lon": "24.98",
+        "fmisid": "100996",
+        "wmo": "2795"
+    },
+    {
+        "name_en": "Helsinki Helsinki-Malmi airport",
+        "lat": "60.25",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Helsinki Malmi lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": "2006-04-22T00:00:00Z"
+            }
+        },
+        "name_fi": "Helsinki Helsingin majakka",
+        "lon": "25.05",
+        "fmisid": "101009",
+        "wmo": "5105"
+    },
+    {
+        "name_en": "Helsinki Kaisaniemi",
+        "lat": "60.18",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Helsinki Kaisaniemi": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Helsinki Kaisaniemi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Helsinki-Malmi lentoasema",
+        "lon": "24.94",
+        "fmisid": "100971",
+        "wmo": "2978"
+    },
+    {
+        "name_en": "Helsinki Kumpula",
+        "lat": "60.2",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Helsinki Kumpula": {
+                "begin": "2006-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Helsinki Kumpula": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Kaivopuisto",
+        "lon": "24.96",
+        "fmisid": "101004",
+        "wmo": "2998"
+    },
+    {
+        "name_en": "Helsinki lighthouse",
+        "lat": "59.95",
+        "datasets": {
+            "Säähavainnot: Helsinki Helsingin majakka": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Helsinki Helsingin majakka": {
+                "begin": "2003-07-17T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Kumpula",
+        "lon": "24.93",
+        "fmisid": "101003",
+        "wmo": "2989"
+    },
+    {
+        "name_en": "Helsinki railway station square",
+        "lat": "60.17",
+        "datasets": {
+            "Säähavainnot: Helsinki Rautatientori": {
+                "begin": "2009-11-02T00:00:00Z",
+                "interval": 10,
+                "end": "2015-09-24T09:20:00Z"
+            },
+            "Säähavaintojen vuorokausiarvot: Helsinki Rautatientori": {
+                "begin": "2009-11-02T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Rautatientori",
+        "lon": "24.94",
+        "fmisid": "101007",
+        "wmo": "2934"
+    },
+    {
+        "name_en": "Helsinki Vuosaari harbour",
+        "lat": "60.21",
+        "datasets": {
+            "Säähavainnot: Helsinki Vuosaari satama": {
+                "begin": "2013-06-27T20:06:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Helsinki Vuosaari satama",
+        "lon": "25.2",
+        "fmisid": "151028",
+        "wmo": "5720"
+    },
+    {
+        "name_en": "Hyvinkää Hyvinkäänkylä",
+        "lat": "60.6",
+        "datasets": {
+            "Säähavainnot: Hyvinkää Hyvinkäänkylä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hyvinkää Hyvinkäänkylä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hyvinkää Hyvinkäänkylä",
+        "lon": "24.8",
+        "fmisid": "101130",
+        "wmo": "2829"
+    },
+    {
+        "name_en": "Hämeenlinna Katinen",
+        "lat": "61",
+        "datasets": {
+            "Säähavainnot: Hämeenlinna Katinen": {
+                "begin": "2012-02-21T08:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hämeenlinna Katinen": {
+                "begin": "2001-10-17T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hämeenlinna Katinen",
+        "lon": "24.49",
+        "fmisid": "101150",
+        "wmo": "2754"
+    },
+    {
+        "name_en": "Hämeenlinna Lammi Evo",
+        "lat": "61.22",
+        "datasets": {
+            "Säähavainnot: Hämeenlinna Lammi Evo": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Hämeenlinna Lammi Evo": {
+                "begin": "2005-11-08T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Hämeenlinna Lammi Evo",
+        "lon": "25.13",
+        "fmisid": "101189",
+        "wmo": "2713"
+    },
+    {
+        "name_en": "Hämeenlinna Lammi Pappila",
+        "lat": "61.05",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Hämeenlinna Lammi Pappila": {
+                "begin": "1963-07-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Hämeenlinna Lammi Pappila": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Hämeenlinna Lammi Pappila",
+        "lon": "25.04",
+        "fmisid": "101154",
+        "wmo": "2767"
+    },
+    {
+        "name_en": "Ilomantsi Mekrijärvi",
+        "lat": "62.77",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Ilomantsi Mekrijärvi": {
+                "begin": "1999-09-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Ilomantsi Mekrijärvi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Ilomantsi Mekrijärvi",
+        "lon": "30.98",
+        "fmisid": "101651",
+        "wmo": "2939"
+    },
+    {
+        "name_en": "Ilomantsi Pötsönvaara",
+        "lat": "63.14",
+        "datasets": {
+            "Säähavainnot: Ilomantsi Pötsönvaara": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Ilomantsi Pötsönvaara": {
+                "begin": "1981-09-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Ilomantsi Pötsönvaara",
+        "lon": "31.04",
+        "fmisid": "101649",
+        "wmo": "2766"
+    },
+    {
+        "name_en": "Inari Angeli Lintupuoliselkä",
+        "lat": "68.9",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inari Angeli Lintupuoliselkä": {
+                "begin": "2008-10-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Inari Angeli Lintupuoliselkä": {
+                "begin": "2008-10-01T06:50:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Angeli Lintupuoliselkä",
+        "lon": "25.74",
+        "fmisid": "102026",
+        "wmo": "2857"
+    },
+    {
+        "name_en": "Inari Ivalo airport",
+        "lat": "68.61",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inari Ivalo lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Ivalo lentoasema",
+        "lon": "27.42",
+        "fmisid": "102033",
+        "wmo": "2807"
+    },
+    {
+        "name_en": "Inari Kaamanen",
+        "lat": "69.14",
+        "datasets": {
+            "Säähavainnot: Inari Kaamanen": {
+                "begin": "2008-08-01T06:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Inari Kaamanen": {
+                "begin": "2008-08-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Kaamanen",
+        "lon": "27.27",
+        "fmisid": "102047",
+        "wmo": "2702"
+    },
+    {
+        "name_en": "Inari Kirakkajärvi",
+        "lat": "69.58",
+        "datasets": {
+            "Säähavainnot: Inari Kirakkajärvi": {
+                "begin": "2009-09-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Inari Kirakkajärvi": {
+                "begin": "2009-09-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Kirakkajärvi",
+        "lon": "28.89",
+        "fmisid": "102055",
+        "wmo": "2858"
+    },
+    {
+        "name_en": "Inari Nellim",
+        "lat": "68.85",
+        "datasets": {
+            "Säähavainnot: Inari Nellim": {
+                "begin": "2011-08-18T11:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Inari Nellim": {
+                "begin": "1991-01-04T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Nellim",
+        "lon": "28.3",
+        "fmisid": "102052",
+        "wmo": "2835"
+    },
+    {
+        "name_en": "Inari Rajajooseppi",
+        "lat": "68.48",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inari Rajajooseppi": {
+                "begin": "2003-07-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Inari Rajajooseppi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Rajajooseppi",
+        "lon": "28.3",
+        "fmisid": "102009",
+        "wmo": "2818"
+    },
+    {
+        "name_en": "Inari Saariselkä Kaunispää",
+        "lat": "68.43",
+        "datasets": {
+            "Säähavainnot: Inari Saariselkä Kaunispää": {
+                "begin": "2010-11-10T12:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Inari Saariselkä Kaunispää": {
+                "begin": "1995-11-14T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Saariselkä Kaunispää",
+        "lon": "27.44",
+        "fmisid": "102006",
+        "wmo": "2817"
+    },
+    {
+        "name_en": "Inari Saariselkä tourist centre",
+        "lat": "68.42",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inari Saariselkä matkailukeskus": {
+                "begin": "1976-11-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Inari Saariselkä matkailukeskus": {
+                "begin": "2008-08-01T07:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Saariselkä matkailukeskus",
+        "lon": "27.41",
+        "fmisid": "102005",
+        "wmo": "2722"
+    },
+    {
+        "name_en": "Inari Seitalaassa",
+        "lat": "69.05",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inari Seitalaassa": {
+                "begin": "2011-05-03T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Inari Seitalaassa": {
+                "begin": "2011-05-02T07:50:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Seitalaassa",
+        "lon": "27.76",
+        "fmisid": "129963",
+        "wmo": "2888"
+    },
+    {
+        "name_en": "Inari Väylä",
+        "lat": "69.07",
+        "datasets": {
+            "Säähavainnot: Inari Väylä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Inari Väylä": {
+                "begin": "1991-10-08T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Inari Väylä",
+        "lon": "27.49",
+        "fmisid": "102042",
+        "wmo": "2827"
+    },
+    {
+        "name_en": "Inkoo Bågaskär",
+        "lat": "59.93",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Inkoo Bågaskär": {
+                "begin": "1962-09-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Inkoo Bågaskär": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Inkoo Bågaskär",
+        "lon": "24.01",
+        "fmisid": "100969",
+        "wmo": "2984"
+    },
+    {
+        "name_en": "Joensuu Linnunlahti",
+        "lat": "62.6",
+        "datasets": {
+            "Säähavainnot: Joensuu Linnunlahti": {
+                "begin": "2008-11-14T08:20:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Joensuu Linnunlahti": {
+                "begin": "2008-11-14T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Joensuu Linnunlahti",
+        "lon": "29.72",
+        "fmisid": "101632",
+        "wmo": "2928"
+    },
+    {
+        "name_en": "Jokioinen Observatory",
+        "lat": "60.81",
+        "datasets": {
+            "Säähavainnot: Jokioinen Jokioisten observatorio": {
+                "begin": "2013-01-01T05:40:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Jokioinen Jokioisten observatorio": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Jokioinen Jokioisten observatorio",
+        "lon": "23.5",
+        "fmisid": "101104",
+        "wmo": "2963"
+    },
+    {
+        "name_en": "Jomala Jomalaby",
+        "lat": "60.18",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Jomala Jomalaby": {
+                "begin": "1971-06-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Jomala Jomalaby": {
+                "begin": "2006-06-21T10:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Jomala Jomalaby",
+        "lon": "19.99",
+        "fmisid": "100917",
+        "wmo": "2741"
+    },
+    {
+        "name_en": "Jomala Mariehamn airport",
+        "lat": "60.12",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Jomala Maarianhaminan lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Jomala Maarianhamina lentoasema",
+        "lon": "19.9",
+        "fmisid": "100907",
+        "wmo": "2970"
+    },
+    {
+        "name_en": "Joroinen Varkaus airport",
+        "lat": "62.17",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Joroinen Varkauden lentoasema": {
+                "begin": "1999-12-17T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Joroinen Varkaus lentoasema",
+        "lon": "27.86",
+        "fmisid": "101420",
+        "wmo": "2748"
+    },
+    {
+        "name_en": "Joutsa Leivonmäki Savenaho",
+        "lat": "61.88",
+        "datasets": {
+            "Säähavainnot: Joutsa Leivonmäki Savenaho": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Joutsa Leivonmäki Savenaho": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Joutsa Leivonmäki Savenaho",
+        "lon": "26.09",
+        "fmisid": "101367",
+        "wmo": "2771"
+    },
+    {
+        "name_en": "Juuka Niemelä",
+        "lat": "63.23",
+        "datasets": {
+            "Säähavainnot: Juuka Niemelä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Juuka Niemelä": {
+                "begin": "1962-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Juuka Niemelä",
+        "lon": "29.23",
+        "fmisid": "101609",
+        "wmo": "2791"
+    },
+    {
+        "name_en": "Juupajoki Hyytiälä",
+        "lat": "61.85",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Juupajoki Hyytiälä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Juupajoki Hyytiälä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Juupajoki Hyytiälä",
+        "lon": "24.29",
+        "fmisid": "101317",
+        "wmo": "2770"
+    },
+    {
+        "name_en": "Juva Partala",
+        "lat": "61.89",
+        "datasets": {
+            "Säähavainnot: Juva Partala": {
+                "begin": "2011-07-06T14:30:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Juva Partala": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Juva Partala",
+        "lon": "27.89",
+        "fmisid": "101418",
+        "wmo": "2736"
+    },
+    {
+        "name_en": "Jyväskylä airport",
+        "lat": "62.4",
+        "datasets": {
+            "Säähavainnot: Jyväskylä lentoasema": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Jyväskylä lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Jyväskylä lentoasema",
+        "lon": "25.67",
+        "fmisid": "101339",
+        "wmo": "2935"
+    },
+    {
+        "name_en": "Jämsä Halli airport",
+        "lat": "61.86",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Jämsä Halli lentokenttä": {
+                "begin": "1964-04-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Jämsä Halli lentoasema",
+        "lon": "24.8",
+        "fmisid": "101315",
+        "wmo": "2945"
+    },
+    {
+        "name_en": "Jämsä Halli Lentoasemantie",
+        "lat": "61.86",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Jämsä Halli Lentoasemantie": {
+                "begin": "2008-10-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Jämsä Halli Lentoasemantie": {
+                "begin": "2008-10-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Jämsä Halli Lentoasemantie",
+        "lon": "24.81",
+        "fmisid": "101338",
+        "wmo": "2946"
+    },
+    {
+        "name_en": "Kaarina Yltöinen",
+        "lat": "60.39",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kaarina Yltöinen": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kaarina Yltöinen": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kaarina Yltöinen",
+        "lon": "22.55",
+        "fmisid": "100934",
+        "wmo": "2828"
+    },
+    {
+        "name_en": "Kajaani airport",
+        "lat": "64.28",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kajaani lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kajaani lentoasema",
+        "lon": "27.67",
+        "fmisid": "101725",
+        "wmo": "2897"
+    },
+    {
+        "name_en": "Kajaani Petäisenniska",
+        "lat": "64.22",
+        "datasets": {
+            "Säähavainnot: Kajaani Petäisenniska": {
+                "begin": "2010-10-12T11:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kajaani Petäisenniska": {
+                "begin": "2010-10-12T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kajaani Petäisenniska",
+        "lon": "27.75",
+        "fmisid": "126736",
+        "wmo": "2883"
+    },
+    {
+        "name_en": "Kalajoki Ulkokalla",
+        "lat": "64.33",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kalajoki Ulkokalla": {
+                "begin": "1981-01-02T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kalajoki Ulkokalla": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kalajoki Ulkokalla",
+        "lon": "23.45",
+        "fmisid": "101673",
+        "wmo": "2907"
+    },
+    {
+        "name_en": "Kankaanpää Niinisalo airfield",
+        "lat": "61.84",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kankaanpää Niinisalo lentokenttä": {
+                "begin": "1998-05-08T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kankaanpää Niinisalo lentokenttä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kankaanpää Niinisalo lentokenttä",
+        "lon": "22.46",
+        "fmisid": "101291",
+        "wmo": "2753"
+    },
+    {
+        "name_en": "Karvia Alkkia",
+        "lat": "62.18",
+        "datasets": {
+            "Säähavainnot: Karvia Alkkia": {
+                "begin": "2008-12-17T07:30:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Karvia Alkkia": {
+                "begin": "1966-03-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Karvia Alkkia",
+        "lon": "22.8",
+        "fmisid": "101272",
+        "wmo": "2708"
+    },
+    {
+        "name_en": "Kaskinen Sälgrund",
+        "lat": "62.33",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kaskinen Sälgrund": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kaskinen Sälgrund": {
+                "begin": "2013-04-10T06:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kaskinen Sälgrund",
+        "lon": "21.19",
+        "fmisid": "101256",
+        "wmo": "2931"
+    },
+    {
+        "name_en": "Kauhajoki Kuja-Kokko",
+        "lat": "62.41",
+        "datasets": {
+            "Säähavainnot: Kauhajoki Kuja-Kokko": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kauhajoki Kuja-Kokko": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kauhajoki Kuja-Kokko",
+        "lon": "22.18",
+        "fmisid": "101289",
+        "wmo": "2769"
+    },
+    {
+        "name_en": "Kauhava airfield",
+        "lat": "63.12",
+        "datasets": {
+            "Säähavainnot: Kauhava lentokenttä": {
+                "begin": "2008-11-14T08:10:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kauhava lentokenttä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kauhava lentokenttä",
+        "lon": "23.04",
+        "fmisid": "101503",
+        "wmo": "2913"
+    },
+    {
+        "name_en": "Kemi Ajos",
+        "lat": "65.67",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kemi Ajos": {
+                "begin": "1984-01-03T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kemi Ajos": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kemi Ajos",
+        "lon": "24.52",
+        "fmisid": "101846",
+        "wmo": "2862"
+    },
+    {
+        "name_en": "Kemi I lighthouse",
+        "lat": "65.39",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kemi I majakka": {
+                "begin": "1981-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kemi I majakka": {
+                "begin": "2013-11-21T23:39:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kemi I majakka",
+        "lon": "24.1",
+        "fmisid": "101783",
+        "wmo": "2863"
+    },
+    {
+        "name_en": "Kemi Kemi-Tornio airport",
+        "lat": "65.78",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Keminmaa Kemi-Tornion lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kemi Kemi-Tornio lentoasema",
+        "lon": "24.58",
+        "fmisid": "101840",
+        "wmo": "2864"
+    },
+    {
+        "name_en": "Kemijärvi airfield",
+        "lat": "66.72",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kemijärvi lentokenttä": {
+                "begin": "2006-05-23T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kemijärvi lentokenttä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kemijärvi lentokenttä",
+        "lon": "27.16",
+        "fmisid": "101950",
+        "wmo": "2814"
+    },
+    {
+        "name_en": "Kemiönsaari Kemiö",
+        "lat": "60.17",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kemiönsaari Kemiö kk": {
+                "begin": "2009-09-07T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kemiönsaari Kemiö": {
+                "begin": "2009-09-07T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kemiönsaari Kemiö",
+        "lon": "22.76",
+        "fmisid": "100951",
+        "wmo": "2906"
+    },
+    {
+        "name_en": "Kemiönsaari Vänö",
+        "lat": "59.87",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kemiönsaari Vänö": {
+                "begin": "1991-01-04T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kemiönsaari Vänö": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kemiönsaari Vänö",
+        "lon": "22.19",
+        "fmisid": "100945",
+        "wmo": "2743"
+    },
+    {
+        "name_en": "Kirkkonummi Mäkiluoto",
+        "lat": "59.92",
+        "datasets": {
+            "Säähavainnot: Kirkkonummi Mäkiluoto": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kirkkonummi Mäkiluoto": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kirkkonummi Mäkiluoto",
+        "lon": "24.35",
+        "fmisid": "100997",
+        "wmo": "2794"
+    },
+    {
+        "name_en": "Kittilä",
+        "lat": "67.65",
+        "datasets": {
+            "Säähavainnot: Kittilä kk": {
+                "begin": "2009-11-27T07:10:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kittilä kk": {
+                "begin": "2009-11-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Alakylä",
+        "lon": "24.9",
+        "fmisid": "101990",
+        "wmo": "2860"
+    },
+    {
+        "name_en": "Kittilä airport",
+        "lat": "67.69",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kittilä lentoasema": {
+                "begin": "1999-10-05T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Kenttärova",
+        "lon": "24.85",
+        "fmisid": "101986",
+        "wmo": "2720"
+    },
+    {
+        "name_en": "Kittilä Kenttärova",
+        "lat": "67.99",
+        "datasets": {
+            "Säähavainnot: Kittilä Kenttärova": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kittilä Kenttärova": {
+                "begin": "2002-10-22T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä lentoasema",
+        "lon": "24.24",
+        "fmisid": "101987",
+        "wmo": "2824"
+    },
+    {
+        "name_en": "Kittilä Levitunturi",
+        "lat": "67.78",
+        "datasets": {
+            "Säähavainnot: Kittilä Levitunturi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kittilä Levitunturi": {
+                "begin": "1995-11-14T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Levitunturi",
+        "lon": "24.85",
+        "fmisid": "101981",
+        "wmo": "2723"
+    },
+    {
+        "name_en": "Kittilä Lompolonvuoma",
+        "lat": "68",
+        "datasets": {
+            "Säähavainnot: Kittilä Lompolonvuoma": {
+                "begin": "2013-08-26T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Lompolonvuoma",
+        "lon": "24.21",
+        "fmisid": "778135",
+        "wmo": "2764"
+    },
+    {
+        "name_en": "Kittilä Matorova",
+        "lat": "68",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kittilä Matorova": {
+                "begin": "2010-09-21T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kittilä Matorova": {
+                "begin": "2010-09-20T04:30:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Matorova",
+        "lon": "24.24",
+        "fmisid": "101985",
+        "wmo": "2882"
+    },
+    {
+        "name_en": "Kittilä Pokka",
+        "lat": "68.17",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kittilä Pokka": {
+                "begin": "1971-07-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kittilä Pokka": {
+                "begin": "2008-01-01T06:10:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kittilä Pokka",
+        "lon": "25.78",
+        "fmisid": "101994",
+        "wmo": "2717"
+    },
+    {
+        "name_en": "Kokemäki Tulkkila",
+        "lat": "61.25",
+        "datasets": {
+            "Säähavainnot: Kokemäki Tulkkila": {
+                "begin": "2010-05-26T08:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kokemäki Tulkkila": {
+                "begin": "2010-05-26T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kokemäki Tulkkila",
+        "lon": "22.35",
+        "fmisid": "101103",
+        "wmo": "2937"
+    },
+    {
+        "name_en": "Kokkola Hollihaka",
+        "lat": "63.84",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kokkola Hollihaka": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kokkola Hollihaka": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kokkola Hollihaka",
+        "lon": "23.12",
+        "fmisid": "101675",
+        "wmo": "2852"
+    },
+    {
+        "name_en": "Kokkola Tankar",
+        "lat": "63.95",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kokkola Tankar": {
+                "begin": "1996-08-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kokkola Tankar": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kokkola Tankar",
+        "lon": "22.84",
+        "fmisid": "101661",
+        "wmo": "2721"
+    },
+    {
+        "name_en": "Korsnäs Bredskäret",
+        "lat": "62.93",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Korsnäs Bredskäret": {
+                "begin": "1992-01-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Korsnäs Bredskäret": {
+                "begin": "2011-11-01T12:50:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Korsnäs Bredskäret",
+        "lon": "21.19",
+        "fmisid": "101479",
+        "wmo": "2780"
+    },
+    {
+        "name_en": "Kotka Haapasaari",
+        "lat": "60.29",
+        "datasets": {
+            "Säähavainnot: Kotka Haapasaari": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kotka Haapasaari": {
+                "begin": "1986-04-12T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kotka Haapasaari",
+        "lon": "27.19",
+        "fmisid": "101042",
+        "wmo": "2967"
+    },
+    {
+        "name_en": "Kotka Rankki",
+        "lat": "60.38",
+        "datasets": {
+            "Säähavainnot: Kotka Rankki": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kotka Rankki": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kotka Rankki",
+        "lon": "26.96",
+        "fmisid": "101030",
+        "wmo": "2976"
+    },
+    {
+        "name_en": "Kouvola Anjala",
+        "lat": "60.7",
+        "datasets": {
+            "Säähavainnot: Kouvola Anjala": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kouvola Anjala": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kouvola Anjala",
+        "lon": "26.81",
+        "fmisid": "101194",
+        "wmo": "2830"
+    },
+    {
+        "name_en": "Kouvola Utti airport",
+        "lat": "60.9",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kouvola Utti lentokenttä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kouvola Utti lentoasema",
+        "lon": "26.95",
+        "fmisid": "101191",
+        "wmo": "2966"
+    },
+    {
+        "name_en": "Kouvola Utti Lentoportintie",
+        "lat": "60.89",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kouvola Utti Lentoportintie": {
+                "begin": "2008-10-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kouvola Utti Lentoportintie": {
+                "begin": "2008-10-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kouvola Utti Lentoportintie",
+        "lon": "26.93",
+        "fmisid": "101219",
+        "wmo": "2956"
+    },
+    {
+        "name_en": "Kristiinankaupunki lighthouse",
+        "lat": "62.2",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kristiinankaupunki Majakka": {
+                "begin": "1997-09-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kristiinankaupunki Majakka": {
+                "begin": "2012-06-01T07:30:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kristiinankaupunki Majakka",
+        "lon": "21.17",
+        "fmisid": "101268",
+        "wmo": "2752"
+    },
+    {
+        "name_en": "Kruunupyy Kokkola-Pietarsaari airport",
+        "lat": "63.72",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kruunupyy lentoasema": {
+                "begin": "1961-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kruunupyy Kokkola-Pietarsaari lentoasema",
+        "lon": "23.14",
+        "fmisid": "101662",
+        "wmo": "2903"
+    },
+    {
+        "name_en": "Kuhmo Kalliojoki",
+        "lat": "64.3",
+        "datasets": {
+            "Säähavainnot: Kuhmo Kalliojoki": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kuhmo Kalliojoki": {
+                "begin": "1997-11-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kuhmo Kalliojoki",
+        "lon": "30.17",
+        "fmisid": "101773",
+        "wmo": "2799"
+    },
+    {
+        "name_en": "Kumlinge",
+        "lat": "60.26",
+        "datasets": {
+            "Säähavainnot: Kumlinge kirkonkylä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kumlinge kirkonkylä": {
+                "begin": "2000-11-08T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kumlinge kirkonkylä",
+        "lon": "20.75",
+        "fmisid": "100928",
+        "wmo": "2790"
+    },
+    {
+        "name_en": "Kuopio Maaninka",
+        "lat": "63.14",
+        "datasets": {
+            "Säähavainnot: Kuopio Maaninka": {
+                "begin": "2011-05-25T08:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Maaninka Halola": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kuopio Maaninka",
+        "lon": "27.31",
+        "fmisid": "101572",
+        "wmo": "2788"
+    },
+    {
+        "name_en": "Kuopio Ritoniemi",
+        "lat": "62.8",
+        "datasets": {
+            "Säähavainnot: Kuopio Ritoniemi": {
+                "begin": "2011-07-20T13:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kuopio Ritoniemi": {
+                "begin": "1991-05-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kuopio Ritoniemi",
+        "lon": "27.9",
+        "fmisid": "101580",
+        "wmo": "2732"
+    },
+    {
+        "name_en": "Kuopio Savilahti",
+        "lat": "62.89",
+        "datasets": {
+            "Säähavainnot: Kuopio Savilahti": {
+                "begin": "2009-05-01T23:39:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kuopio Savilahti": {
+                "begin": "2005-06-24T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kuopio Savilahti",
+        "lon": "27.63",
+        "fmisid": "101586",
+        "wmo": "2955"
+    },
+    {
+        "name_en": "Kustavi Isokari",
+        "lat": "60.72",
+        "datasets": {
+            "Säähavainnot: Kustavi Isokari": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kustavi Isokari": {
+                "begin": "1984-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kustavi Isokari",
+        "lon": "21.03",
+        "fmisid": "101059",
+        "wmo": "2964"
+    },
+    {
+        "name_en": "Kuusamo airport",
+        "lat": "65.99",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kuusamo lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kuusamo Kiutaköngäs",
+        "lon": "29.23",
+        "fmisid": "101886",
+        "wmo": "2869"
+    },
+    {
+        "name_en": "Kuusamo Kiutaköngäs",
+        "lat": "66.37",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kuusamo Kiutaköngäs": {
+                "begin": "1966-08-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kuusamo Kiutaköngäs": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kuusamo lentoasema",
+        "lon": "29.31",
+        "fmisid": "101887",
+        "wmo": "2811"
+    },
+    {
+        "name_en": "Kuusamo Oulanka",
+        "lat": "66.32",
+        "datasets": {
+            "Säähavainnot: Kuusamo Oulanka": {
+                "begin": "2015-09-30T08:40:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kuusamo Oulanka",
+        "lon": "29.4",
+        "fmisid": "101899",
+        "wmo": "2749"
+    },
+    {
+        "name_en": "Kuusamo Ruka Talvijärvi",
+        "lat": "66.17",
+        "datasets": {
+            "Säähavainnot: Kuusamo Ruka Talvijärvi": {
+                "begin": "2013-09-18T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kuusamo Ruka Talvijärvi",
+        "lon": "29.14",
+        "fmisid": "806428",
+        "wmo": "2760"
+    },
+    {
+        "name_en": "Kuusamo Rukatunturi",
+        "lat": "66.17",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Kuusamo Rukatunturi": {
+                "begin": "1993-11-05T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Kuusamo Rukatunturi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Kuusamo Rukatunturi",
+        "lon": "29.15",
+        "fmisid": "101897",
+        "wmo": "2868"
+    },
+    {
+        "name_en": "Kökar Bogskär",
+        "lat": "59.51",
+        "datasets": {
+            "Säähavainnot: Kökar Bogskär": {
+                "begin": "2012-02-07T06:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Kökar Bogskär": {
+                "begin": "1984-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Kökar Bogskär",
+        "lon": "20.36",
+        "fmisid": "100921",
+        "wmo": "2979"
+    },
+    {
+        "name_en": "Lahti Laune",
+        "lat": "60.96",
+        "datasets": {
+            "Säähavainnot: Lahti Laune": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Lahti Laune": {
+                "begin": "1961-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lahti Laune",
+        "lon": "25.63",
+        "fmisid": "101152",
+        "wmo": "2965"
+    },
+    {
+        "name_en": "Lappeenranta airport",
+        "lat": "61.04",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Lappeenranta lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lappeenranta Hiekkapakka",
+        "lon": "28.15",
+        "fmisid": "101237",
+        "wmo": "2958"
+    },
+    {
+        "name_en": "Lappeenranta Hiekkapakka",
+        "lat": "61.2",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Lappeenranta Hiekkapakka": {
+                "begin": "2009-11-28T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Lappeenranta Hiekkapakka": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Lappeenranta Konnunsuo",
+        "lon": "28.47",
+        "fmisid": "101252",
+        "wmo": "2919"
+    },
+    {
+        "name_en": "Lappeenranta Konnunsuo",
+        "lat": "61.04",
+        "datasets": {
+            "Säähavainnot: Lappeenranta Konnunsuo": {
+                "begin": "2011-09-14T09:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Lappeenranta Konnunsuo": {
+                "begin": "1992-10-18T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lappeenranta lentoasema",
+        "lon": "28.56",
+        "fmisid": "101246",
+        "wmo": "2733"
+    },
+    {
+        "name_en": "Lappeenranta Lepola",
+        "lat": "61.06",
+        "datasets": {
+            "Säähavainnot: Lappeenranta Lepola": {
+                "begin": "2008-05-26T06:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Lappeenranta Lepola": {
+                "begin": "1995-09-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lappeenranta Lepola",
+        "lon": "28.21",
+        "fmisid": "101247",
+        "wmo": "2959"
+    },
+    {
+        "name_en": "Lemland Nyhamn",
+        "lat": "59.96",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Lemland Nyhamn": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Lemland Nyhamn": {
+                "begin": "2006-02-02T12:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Lemland Nyhamn",
+        "lon": "19.95",
+        "fmisid": "100909",
+        "wmo": "2980"
+    },
+    {
+        "name_en": "Lieksa Lampela",
+        "lat": "63.32",
+        "datasets": {
+            "Säähavainnot: Lieksa Lampela": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Lieksa Lampela": {
+                "begin": "1970-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lieksa Lampela",
+        "lon": "30.05",
+        "fmisid": "101636",
+        "wmo": "2796"
+    },
+    {
+        "name_en": "Liperi Joensuu airport",
+        "lat": "62.66",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Liperi Joensuun lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Liperi Joensuu lentoasema",
+        "lon": "29.61",
+        "fmisid": "101608",
+        "wmo": "2929"
+    },
+    {
+        "name_en": "Liperi Tuiskavanluoto",
+        "lat": "62.55",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Liperi Tuiskavanluoto": {
+                "begin": "1997-08-26T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Liperi Tuiskavanluoto": {
+                "begin": "2010-01-11T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Liperi Tuiskavanluoto",
+        "lon": "29.67",
+        "fmisid": "101628",
+        "wmo": "2793"
+    },
+    {
+        "name_en": "Lohja Porla",
+        "lat": "60.24",
+        "datasets": {
+            "Säähavainnot: Lohja Porla": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Lohja Porla": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Lohja Porla",
+        "lon": "24.05",
+        "fmisid": "100974",
+        "wmo": "2706"
+    },
+    {
+        "name_en": "Loviisa Orrengrund",
+        "lat": "60.27",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Loviisa Orrengrund": {
+                "begin": "1984-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Loviisa Orrengrund": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Loviisa Orrengrund",
+        "lon": "26.44",
+        "fmisid": "101039",
+        "wmo": "2992"
+    },
+    {
+        "name_en": "Luhanka Judinsalo",
+        "lat": "61.7",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Luhanka Judinsalo": {
+                "begin": "1991-10-09T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Luhanka Judinsalo": {
+                "begin": "2013-04-10T06:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Luhanka Judinsalo",
+        "lon": "25.51",
+        "fmisid": "101362",
+        "wmo": "2765"
+    },
+    {
+        "name_en": "Lumparland Långnäs harbour",
+        "lat": "60.12",
+        "datasets": {
+            "Säähavainnot: Lumparland Långnäs satama": {
+                "begin": "2013-06-07T11:30:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Lumparland Långnäs satama",
+        "lon": "20.3",
+        "fmisid": "151048",
+        "wmo": "2724"
+    },
+    {
+        "name_en": "Maalahti Strömmingsbådan",
+        "lat": "62.98",
+        "datasets": {
+            "Säähavainnot: Maalahti Strömmingsbådan": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Maalahti Strömmingsbådan": {
+                "begin": "1997-09-09T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Maalahti Strömmingsbådan",
+        "lon": "20.74",
+        "fmisid": "101481",
+        "wmo": "2781"
+    },
+    {
+        "name_en": "Mariehamn West Harbour",
+        "lat": "60.09",
+        "datasets": {
+            "Säähavainnot: Maarianhamina Länsisatama": {
+                "begin": "2013-06-07T10:13:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Maarianhamina Länsisatama",
+        "lon": "19.93",
+        "fmisid": "151029",
+        "wmo": "2997"
+    },
+    {
+        "name_en": "Mikkeli airport",
+        "lat": "61.69",
+        "datasets": {
+            "Säähavainnot: Mikkeli lentoasema": {
+                "begin": "2013-10-21T11:20:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Mikkeli lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Mikkeli lentoasema",
+        "lon": "27.2",
+        "fmisid": "101398",
+        "wmo": "2947"
+    },
+    {
+        "name_en": "Multia Karhila",
+        "lat": "62.51",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Multia Karhila": {
+                "begin": "2008-09-25T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Multia Karhila": {
+                "begin": "2008-09-16T12:30:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Multia Karhila",
+        "lon": "24.81",
+        "fmisid": "101536",
+        "wmo": "2927"
+    },
+    {
+        "name_en": "Muonio Alamuonio",
+        "lat": "67.96",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Muonio Alamuonio": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Muonio Alamuonio": {
+                "begin": "2013-07-24T10:10:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Muonio Alamuonio",
+        "lon": "23.68",
+        "fmisid": "101969",
+        "wmo": "2823"
+    },
+    {
+        "name_en": "Muonio Laukukero",
+        "lat": "68.06",
+        "datasets": {
+            "Säähavainnot: Muonio Laukukero": {
+                "begin": "2013-08-22T08:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Muonio Laukukero": {
+                "begin": "1996-09-28T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Muonio Laukukero",
+        "lon": "24.03",
+        "fmisid": "101982",
+        "wmo": "2820"
+    },
+    {
+        "name_en": "Muonio Sammaltunturi",
+        "lat": "67.97",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Muonio Sammaltunturi": {
+                "begin": "1996-09-28T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Muonio Sammaltunturi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Muonio Sammaltunturi",
+        "lon": "24.12",
+        "fmisid": "101983",
+        "wmo": "2821"
+    },
+    {
+        "name_en": "Mustasaari Valassaaret",
+        "lat": "63.44",
+        "datasets": {
+            "Säähavainnot: Mustasaari Valassaaret": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Mustasaari Valassaaret": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Mustasaari Valassaaret",
+        "lon": "21.06",
+        "fmisid": "101464",
+        "wmo": "2910"
+    },
+    {
+        "name_en": "Mäntsälä Hirvihaara",
+        "lat": "60.63",
+        "datasets": {
+            "Säähavainnot: Mäntsälä Hirvihaara": {
+                "begin": "2015-09-28T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Mäntsälä Hirvihaara",
+        "lon": "25.19",
+        "fmisid": "103794",
+        "wmo": "2774"
+    },
+    {
+        "name_en": "Nurmijärvi Geophysical Observatory",
+        "lat": "60.51",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Nurmijärvi geofysiikan observatorio": {
+                "begin": "1970-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Nurmijärvi geofysiikan observatorio": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Nurmijärvi geofysiikan observatorio",
+        "lon": "24.65",
+        "fmisid": "101149",
+        "wmo": "2983"
+    },
+    {
+        "name_en": "Oulu airport",
+        "lat": "64.93",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Oulu lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": "2011-01-17T00:00:00Z"
+            }
+        },
+        "name_fi": "Oulu lentoasema",
+        "lon": "25.37",
+        "fmisid": "101786",
+        "wmo": "2875"
+    },
+    {
+        "name_en": "Oulu Oulunsalo Pellonpää",
+        "lat": "64.94",
+        "datasets": {
+            "Säähavainnot: Oulu Oulunsalo Pellonpää": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Oulu Oulunsalo Pellonpää": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Oulu Oulunsalo Pellonpää",
+        "lon": "25.37",
+        "fmisid": "101799",
+        "wmo": "2851"
+    },
+    {
+        "name_en": "Oulu Vihreäsaari harbour",
+        "lat": "65.01",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Oulu Vihreäsaari": {
+                "begin": "1996-10-05T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Oulu Vihreäsaari satama": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Oulu Vihreäsaari satama",
+        "lon": "25.39",
+        "fmisid": "101794",
+        "wmo": "2876"
+    },
+    {
+        "name_en": "Parainen Fagerholm",
+        "lat": "60.11",
+        "datasets": {
+            "Säähavainnot: Parainen Fagerholm": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Parainen Fagerholm": {
+                "begin": "1992-11-11T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Parainen Fagerholm",
+        "lon": "21.7",
+        "fmisid": "100924",
+        "wmo": "2950"
+    },
+    {
+        "name_en": "Parainen Utö",
+        "lat": "59.78",
+        "datasets": {
+            "Säähavainnot: Parainen Utö": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Parainen Utö": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Parainen Utö",
+        "lon": "21.37",
+        "fmisid": "100908",
+        "wmo": "2981"
+    },
+    {
+        "name_en": "Parikkala Koitsanlahti",
+        "lat": "61.44",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Parikkala Koitsanlahti": {
+                "begin": "1992-10-18T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Parikkala Koitsanlahti": {
+                "begin": "2011-07-01T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Parikkala Koitsanlahti",
+        "lon": "29.46",
+        "fmisid": "101254",
+        "wmo": "2734"
+    },
+    {
+        "name_en": "Pelkosenniemi Pyhätunturi",
+        "lat": "67.02",
+        "datasets": {
+            "Säähavainnot: Pelkosenniemi Pyhätunturi": {
+                "begin": "2010-10-21T13:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Pelkosenniemi Pyhätunturi": {
+                "begin": "1995-11-11T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Pelkosenniemi Pyhätunturi",
+        "lon": "27.22",
+        "fmisid": "101958",
+        "wmo": "2705"
+    },
+    {
+        "name_en": "Pello centre",
+        "lat": "66.77",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pello kk Museotie": {
+                "begin": "1970-08-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pello kk Museotie": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pello kk Museotie",
+        "lon": "23.96",
+        "fmisid": "101914",
+        "wmo": "2844"
+    },
+    {
+        "name_en": "Pietarsaari Kallan",
+        "lat": "63.75",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pietarsaari Kallan": {
+                "begin": "1995-09-22T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pietarsaari Kallan": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pietarsaari Kallan",
+        "lon": "22.52",
+        "fmisid": "101660",
+        "wmo": "2920"
+    },
+    {
+        "name_en": "Pirkkala Tampere-Pirkkala airport",
+        "lat": "61.42",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pirkkala Tampere-Pirkkalan lentoasema": {
+                "begin": "1979-10-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Pirkkala Tampere-Pirkkala lentoasema",
+        "lon": "23.62",
+        "fmisid": "101118",
+        "wmo": "2944"
+    },
+    {
+        "name_en": "Pori airport",
+        "lat": "61.47",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pori lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": "2011-01-19T00:00:00Z"
+            }
+        },
+        "name_fi": "Pori Lavia",
+        "lon": "21.79",
+        "fmisid": "101044",
+        "wmo": "2952"
+    },
+    {
+        "name_en": "Pori railway station",
+        "lat": "61.48",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pori rautatieasema": {
+                "begin": "2008-10-09T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pori rautatieasema": {
+                "begin": "2008-10-09T11:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pori rautatieasema",
+        "lon": "21.78",
+        "fmisid": "101064",
+        "wmo": "2926"
+    },
+    {
+        "name_en": "Pori Tahkoluoto harbour",
+        "lat": "61.63",
+        "datasets": {
+            "Säähavainnot: Pori Tahkoluoto": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Pori Tahkoluoto": {
+                "begin": "1996-08-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pori Tahkoluoto satama": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pori Tahkoluoto satama",
+        "lon": "21.38",
+        "fmisid": "101267",
+        "wmo": "2751"
+    },
+    {
+        "name_en": "Porvoo Emäsalo",
+        "lat": "60.2",
+        "datasets": {
+            "Säähavainnot: Porvoo Emäsalo": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Porvoo Emäsalo": {
+                "begin": "1984-01-13T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Porvoo Emäsalo",
+        "lon": "25.63",
+        "fmisid": "101023",
+        "wmo": "2991"
+    },
+    {
+        "name_en": "Porvoo Harabacka",
+        "lat": "60.39",
+        "datasets": {
+            "Säähavainnot: Porvoo Harabacka": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Porvoo Harabacka": {
+                "begin": "2006-10-02T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Porvoo Harabacka",
+        "lon": "25.61",
+        "fmisid": "101028",
+        "wmo": "2759"
+    },
+    {
+        "name_en": "Porvoo Kalbådagrund",
+        "lat": "59.99",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Porvoo Kalbådagrund": {
+                "begin": "1981-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Porvoo Kalbådagrund": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Porvoo Kalbådagrund",
+        "lon": "25.6",
+        "fmisid": "101022",
+        "wmo": "2987"
+    },
+    {
+        "name_en": "Porvoo Kilpilahti harbour",
+        "lat": "60.3",
+        "datasets": {
+            "Säähavainnot: Porvoo Kilpilahti satama": {
+                "begin": "2014-10-13T09:50:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Porvoo Kilpilahti satama",
+        "lon": "25.55",
+        "fmisid": "100683",
+        "wmo": "2994"
+    },
+    {
+        "name_en": "Pudasjärvi airfield",
+        "lat": "65.4",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pudasjärvi lentokenttä": {
+                "begin": "1999-08-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pudasjärvi lentokenttä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pudasjärvi Jaurakkajärvi",
+        "lon": "26.96",
+        "fmisid": "101805",
+        "wmo": "2866"
+    },
+    {
+        "name_en": "Puolanka Paljakka",
+        "lat": "64.66",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Puolanka Paljakka": {
+                "begin": "2009-10-05T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Puolanka Paljakka": {
+                "begin": "2009-10-05T06:40:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Puolanka Paljakka",
+        "lon": "28.06",
+        "fmisid": "101831",
+        "wmo": "2859"
+    },
+    {
+        "name_en": "Puumala kk Urheilukenttä",
+        "lat": "61.52",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Puumala kk Urheilukenttä": {
+                "begin": "2012-09-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Puumala kk Urheilukenttä": {
+                "begin": "2012-09-26T12:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Puumala kk Urheilukenttä",
+        "lon": "28.18",
+        "fmisid": "150168",
+        "wmo": "2718"
+    },
+    {
+        "name_en": "Pyhäjärvi Ojakylä",
+        "lat": "63.74",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Pyhäjärvi Ojakylä": {
+                "begin": "1992-10-18T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Pyhäjärvi Ojakylä": {
+                "begin": "2011-09-15T06:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Pyhäjärvi Ojakylä",
+        "lon": "25.71",
+        "fmisid": "101705",
+        "wmo": "2738"
+    },
+    {
+        "name_en": "Raahe Lapaluoto harbour",
+        "lat": "64.67",
+        "datasets": {
+            "Säähavainnot: Raahe Lapaluoto": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavainnot: Raahe Lapaluoto satama": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Raahe Lapaluoto": {
+                "begin": "1991-01-04T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Raahe Lapaluoto satama",
+        "lon": "24.41",
+        "fmisid": "101785",
+        "wmo": "2872"
+    },
+    {
+        "name_en": "Raahe Nahkiainen",
+        "lat": "64.61",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Raahe Nahkiainen": {
+                "begin": "1997-10-02T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Raahe Nahkiainen": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Raahe Nahkiainen",
+        "lon": "23.9",
+        "fmisid": "101775",
+        "wmo": "2800"
+    },
+    {
+        "name_en": "Raasepori Jussarö",
+        "lat": "59.82",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Raasepori Jussarö": {
+                "begin": "1991-01-04T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Raasepori Jussarö": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Raasepori Jussarö",
+        "lon": "23.58",
+        "fmisid": "100965",
+        "wmo": "2757"
+    },
+    {
+        "name_en": "Rantasalmi Rukkasluoto",
+        "lat": "62.06",
+        "datasets": {
+            "Säähavainnot: Rantasalmi Rukkasluoto": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Rantasalmi Rukkasluoto": {
+                "begin": "1997-09-10T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Rantasalmi Rukkasluoto",
+        "lon": "28.57",
+        "fmisid": "101436",
+        "wmo": "2772"
+    },
+    {
+        "name_en": "Ranua airfield",
+        "lat": "65.98",
+        "datasets": {
+            "Säähavainnot: Ranua lentokenttä": {
+                "begin": "2008-09-12T06:20:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Ranua lentokenttä": {
+                "begin": "2008-09-12T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Ranua lentokenttä",
+        "lon": "26.37",
+        "fmisid": "101873",
+        "wmo": "2881"
+    },
+    {
+        "name_en": "Rauma Kylmäpihlaja",
+        "lat": "61.14",
+        "datasets": {
+            "Säähavainnot: Rauma Kylmäpihlaja": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Rauma Kylmäpihlaja": {
+                "begin": "1991-09-18T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Rauma Kylmäpihlaja",
+        "lon": "21.3",
+        "fmisid": "101061",
+        "wmo": "2761"
+    },
+    {
+        "name_en": "Rautavaara Ylä-Luosta",
+        "lat": "63.38",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Rautavaara Ylä-Luosta": {
+                "begin": "1976-06-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Rautavaara Ylä-Luosta": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Rautavaara Ylä-Luosta",
+        "lon": "28.66",
+        "fmisid": "101603",
+        "wmo": "2789"
+    },
+    {
+        "name_en": "Rovaniemi airport",
+        "lat": "66.56",
+        "datasets": {
+            "Säähavainnot: Rovaniemi lentoasema": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Rovaniemi lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Rovaniemi Apukka",
+        "lon": "25.82",
+        "fmisid": "101920",
+        "wmo": "2845"
+    },
+    {
+        "name_en": "Rovaniemi Apukka",
+        "lat": "66.58",
+        "datasets": {
+            "Säähavainnot: Rovaniemi Apukka": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Rovaniemi Apukka": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Rovaniemi lentoasema AWOS",
+        "lon": "26.01",
+        "fmisid": "101933",
+        "wmo": "2813"
+    },
+    {
+        "name_en": "Rovaniemi railway station",
+        "lat": "66.5",
+        "datasets": {
+            "Säähavainnot: Rovaniemi rautatieasema": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Rovaniemi rautatieasema": {
+                "begin": "1997-10-07T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Rovaniemi rautatieasema",
+        "lon": "25.71",
+        "fmisid": "101928",
+        "wmo": "2847"
+    },
+    {
+        "name_en": "Salla Myllytie",
+        "lat": "66.83",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Salla kk Myllytie": {
+                "begin": "1999-07-20T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Salla kk Myllytie": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Salla kk Myllytie",
+        "lon": "28.67",
+        "fmisid": "101959",
+        "wmo": "2849"
+    },
+    {
+        "name_en": "Salla Naruska",
+        "lat": "67.16",
+        "datasets": {
+            "Säähavainnot: Salla Naruska": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Salla Naruska": {
+                "begin": "1999-09-21T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Salla Naruska",
+        "lon": "29.18",
+        "fmisid": "101966",
+        "wmo": "2745"
+    },
+    {
+        "name_en": "Salla Värriötunturi",
+        "lat": "67.75",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Salla Värriötunturi": {
+                "begin": "1974-08-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Salla Värriötunturi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Salla Värriötunturi",
+        "lon": "29.61",
+        "fmisid": "102012",
+        "wmo": "2819"
+    },
+    {
+        "name_en": "Salo Kiikala airfield",
+        "lat": "60.46",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Salo Kiikala lentokenttä": {
+                "begin": "2002-06-11T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Salo Kiikala lentokenttä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Salo Kiikala lentokenttä",
+        "lon": "23.65",
+        "fmisid": "100967",
+        "wmo": "2777"
+    },
+    {
+        "name_en": "Salo Kärkkä",
+        "lat": "60.37",
+        "datasets": {
+            "Säähavainnot: Salo Kärkkä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Salo Kärkkä": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Salo Kärkkä",
+        "lon": "23.11",
+        "fmisid": "100955",
+        "wmo": "2756"
+    },
+    {
+        "name_en": "Savonlinna airport",
+        "lat": "61.95",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Savonlinna lentoasema": {
+                "begin": "1974-10-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Savonlinna Laukansaari",
+        "lon": "28.93",
+        "fmisid": "101430",
+        "wmo": "2948"
+    },
+    {
+        "name_en": "Savonlinna Punkaharju Laukansaari",
+        "lat": "61.8",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Savonlinna Punkaharju Laukansaari": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Savonlinna Punkaharju Laukansaari": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Savonlinna Punkaharju Laukansaari",
+        "lon": "29.32",
+        "fmisid": "101441",
+        "wmo": "2778"
+    },
+    {
+        "name_en": "Savukoski",
+        "lat": "67.29",
+        "datasets": {
+            "Säähavainnot: Savukoski kk": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Savukoski kk": {
+                "begin": "1964-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Savukoski kk",
+        "lon": "28.18",
+        "fmisid": "101952",
+        "wmo": "2815"
+    },
+    {
+        "name_en": "Seinäjoki Pelmaa",
+        "lat": "62.94",
+        "datasets": {
+            "Säähavainnot: Seinäjoki Pelmaa": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Seinäjoki Pelmaa": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Seinäjoki Pelmaa",
+        "lon": "22.49",
+        "fmisid": "101486",
+        "wmo": "2833"
+    },
+    {
+        "name_en": "Siikajoki Revonlahti",
+        "lat": "64.68",
+        "datasets": {
+            "Säähavainnot: Siikajoki Revonlahti": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Siikajoki Revonlahti": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Siikajoki Revonlahti",
+        "lon": "25.09",
+        "fmisid": "101787",
+        "wmo": "2803"
+    },
+    {
+        "name_en": "Siilinjärvi Kuopio airport",
+        "lat": "63.01",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Siilinjärvi Kuopion lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Siilinjärvi Kuopio lentoasema",
+        "lon": "27.8",
+        "fmisid": "101570",
+        "wmo": "2917"
+    },
+    {
+        "name_en": "Sipoo Eestiluoto",
+        "lat": "60.12",
+        "datasets": {
+            "Säähavainnot: Sipoo Eestiluoto": {
+                "begin": "2008-10-29T12:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Sipoo Eestiluoto",
+        "lon": "25.22",
+        "fmisid": "101029",
+        "wmo": "2930"
+    },
+    {
+        "name_en": "Sodankylä Arctic Research Centre",
+        "lat": "67.37",
+        "datasets": {
+            "Säähavainnot: Sodankylä Lapin ilmatieteellinen tutkimuskeskus": {
+                "begin": "2008-02-04T08:20:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Sodankylä Lapin ilmatieteellinen tutkimuskeskus": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Sodankylä Lapin ilmatieteellinen tutkimuskeskus",
+        "lon": "26.63",
+        "fmisid": "101932",
+        "wmo": "2836"
+    },
+    {
+        "name_en": "Sodankylä Lokka",
+        "lat": "67.82",
+        "datasets": {
+            "Säähavainnot: Sodankylä Lokka": {
+                "begin": "2009-09-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Sodankylä Lokka": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Sodankylä Lokka",
+        "lon": "27.75",
+        "fmisid": "102000",
+        "wmo": "2719"
+    },
+    {
+        "name_en": "Sodankylä Vuotso",
+        "lat": "68.08",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Sodankylä Vuotso": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Sodankylä Vuotso": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Sodankylä Vuotso",
+        "lon": "27.19",
+        "fmisid": "102001",
+        "wmo": "2816"
+    },
+    {
+        "name_en": "Somero Salkola",
+        "lat": "60.65",
+        "datasets": {
+            "Säähavainnot: Somero Salkola": {
+                "begin": "2011-05-10T13:30:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Somero Salkola": {
+                "begin": "2011-05-11T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Somero Salkola",
+        "lon": "23.81",
+        "fmisid": "101128",
+        "wmo": "2949"
+    },
+    {
+        "name_en": "Sotkamo Kuolaniemi",
+        "lat": "64.11",
+        "datasets": {
+            "Säähavainnot: Sotkamo Kuolaniemi": {
+                "begin": "2009-07-23T12:20:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Sotkamo Kuolaniemi": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Sotkamo Kuolaniemi",
+        "lon": "28.34",
+        "fmisid": "101756",
+        "wmo": "2739"
+    },
+    {
+        "name_en": "Suomussalmi Pesiö",
+        "lat": "64.93",
+        "datasets": {
+            "Säähavainnot: Suomussalmi Pesiö": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Suomussalmi Pesiö": {
+                "begin": "1981-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Suomussalmi Pesiö",
+        "lon": "28.75",
+        "fmisid": "101826",
+        "wmo": "2889"
+    },
+    {
+        "name_en": "Taivalkoski Urheilutie",
+        "lat": "65.57",
+        "datasets": {
+            "Säähavainnot: Taivalkoski kk Urheilutie": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Taivalkoski kk Kauppatie": {
+                "begin": "2002-09-19T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Taivalkoski kk Urheilutie",
+        "lon": "28.22",
+        "fmisid": "101885",
+        "wmo": "2804"
+    },
+    {
+        "name_en": "Tampere Härmälä",
+        "lat": "61.47",
+        "datasets": {
+            "Säähavainnot: Tampere Härmälä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Tampere Härmälä": {
+                "begin": "1997-05-08T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Tampere Härmälä",
+        "lon": "23.75",
+        "fmisid": "101124",
+        "wmo": "2763"
+    },
+    {
+        "name_en": "Tampere keskusta Satakunnankatu",
+        "lat": "61.5",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Tampere keskusta Satakunnankatu": {
+                "begin": "2013-04-23T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Tampere keskusta Satakunnankatu": {
+                "begin": "2013-04-23T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Tampere keskusta Satakunnankatu",
+        "lon": "23.76",
+        "fmisid": "151049",
+        "wmo": "2744"
+    },
+    {
+        "name_en": "Tampere Siilinkari",
+        "lat": "61.52",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Tampere Siilinkari": {
+                "begin": "1992-11-11T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Tampere Siilinkari": {
+                "begin": "2008-05-06T12:00:00Z",
+                "interval": 10,
+                "end": "2015-07-31T06:10:00Z"
+            }
+        },
+        "name_fi": "Tampere Siilinkari",
+        "lon": "23.75",
+        "fmisid": "101311",
+        "wmo": "2943"
+    },
+    {
+        "name_en": "Tohmajärvi Kemie",
+        "lat": "62.24",
+        "datasets": {
+            "Säähavainnot: Tohmajärvi Kemie": {
+                "begin": "2011-10-28T07:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Tohmajärvi Kemie": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Tohmajärvi Kemie",
+        "lon": "30.35",
+        "fmisid": "101459",
+        "wmo": "2832"
+    },
+    {
+        "name_en": "Toholampi Laitala",
+        "lat": "63.82",
+        "datasets": {
+            "Säähavainnot: Toholampi Laitala": {
+                "begin": "2012-06-06T08:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Toholampi Laitala": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Toholampi Laitala",
+        "lon": "24.16",
+        "fmisid": "101689",
+        "wmo": "2737"
+    },
+    {
+        "name_en": "Tornio Torppi",
+        "lat": "65.85",
+        "datasets": {
+            "Säähavainnot: Tornio Torppi": {
+                "begin": "2008-07-30T07:40:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Tornio Torppi": {
+                "begin": "2008-07-30T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Tornio Torppi",
+        "lon": "24.17",
+        "fmisid": "101851",
+        "wmo": "2880"
+    },
+    {
+        "name_en": "Turku airport",
+        "lat": "60.52",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Turku lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": "2011-01-17T00:00:00Z"
+            }
+        },
+        "name_fi": "Turku Artukainen",
+        "lon": "22.28",
+        "fmisid": "101065",
+        "wmo": "2972"
+    },
+    {
+        "name_en": "Turku Artukainen",
+        "lat": "60.45",
+        "datasets": {
+            "Säähavainnot: Turku Artukainen": {
+                "begin": "2011-09-01T12:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Turku Artukainen": {
+                "begin": "2003-01-28T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Turku lentoasema",
+        "lon": "22.18",
+        "fmisid": "100949",
+        "wmo": "2773"
+    },
+    {
+        "name_en": "Turku Rajakari",
+        "lat": "60.38",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Turku Rajakari": {
+                "begin": "1992-01-31T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Turku Rajakari": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Turku Rajakari",
+        "lon": "22.1",
+        "fmisid": "100947",
+        "wmo": "2747"
+    },
+    {
+        "name_en": "Utsjoki Kevo",
+        "lat": "69.76",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Utsjoki Kevo": {
+                "begin": "1962-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Utsjoki Kevo": {
+                "begin": "2010-01-19T08:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Utsjoki Kevo",
+        "lon": "27.01",
+        "fmisid": "102035",
+        "wmo": "2805"
+    },
+    {
+        "name_en": "Utsjoki Kevo Kevojärvi",
+        "lat": "69.76",
+        "datasets": {
+            "Säähavainnot: Utsjoki Kevo Kevojärvi": {
+                "begin": "2010-09-17T01:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Utsjoki Kevo Kevojärvi": {
+                "begin": "2010-09-17T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Utsjoki Kevo Kevojärvi",
+        "lon": "27.01",
+        "fmisid": "126737",
+        "wmo": "2890"
+    },
+    {
+        "name_en": "Utsjoki Nuorgam",
+        "lat": "70.08",
+        "datasets": {
+            "Säähavainnot: Utsjoki Nuorgam": {
+                "begin": "2009-09-17T09:50:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Utsjoki Nuorgam": {
+                "begin": "1968-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Utsjoki Nuorgam",
+        "lon": "27.9",
+        "fmisid": "102036",
+        "wmo": "2825"
+    },
+    {
+        "name_en": "Vaala Pelso",
+        "lat": "64.5",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vaala Pelso": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Vaala Pelso": {
+                "begin": "2011-08-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Vaala Pelso",
+        "lon": "26.42",
+        "fmisid": "101800",
+        "wmo": "2714"
+    },
+    {
+        "name_en": "Vaasa airport",
+        "lat": "63.06",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vaasa lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": "2011-01-17T00:00:00Z"
+            }
+        },
+        "name_fi": "Vaasa Klemettilä",
+        "lon": "21.75",
+        "fmisid": "101462",
+        "wmo": "2911"
+    },
+    {
+        "name_en": "Vaasa Klemettilä",
+        "lat": "63.1",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vaasa Klemettilä": {
+                "begin": "2010-05-28T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Vaasa Klemettilä": {
+                "begin": "2010-05-27T13:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Vaasa lentoasema",
+        "lon": "21.64",
+        "fmisid": "101485",
+        "wmo": "2957"
+    },
+    {
+        "name_en": "Valtimo centre",
+        "lat": "63.67",
+        "datasets": {
+            "Säähavainnot: Valtimo kk": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Valtimo kk": {
+                "begin": "1970-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Valtimo kk",
+        "lon": "28.83",
+        "fmisid": "101743",
+        "wmo": "2798"
+    },
+    {
+        "name_en": "Vantaa Helsinki-Vantaa airport",
+        "lat": "60.33",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vantaa Helsinki-Vantaan lentoasema": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Vantaa Helsinki-Vantaan lentoasema": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Vantaa Helsinki-Vantaa lentoasema AWOS",
+        "lon": "24.96",
+        "fmisid": "100968",
+        "wmo": "2974"
+    },
+    {
+        "name_en": "Varkaus Kosulanniemi",
+        "lat": "62.32",
+        "datasets": {
+            "Säähavainnot: Varkaus Kosulanniemi": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Varkaus Kosulanniemi": {
+                "begin": "2008-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Varkaus Kosulanniemi",
+        "lon": "27.91",
+        "fmisid": "101421",
+        "wmo": "2850"
+    },
+    {
+        "name_en": "Vesanto Sonkari",
+        "lat": "62.92",
+        "datasets": {
+            "Säähavainnot: Vesanto Sonkari": {
+                "begin": "2009-09-18T09:40:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Vesanto Sonkari": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Vesanto Sonkari",
+        "lon": "26.42",
+        "fmisid": "101555",
+        "wmo": "2710"
+    },
+    {
+        "name_en": "Vieremä Kaarakkala",
+        "lat": "63.84",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vieremä Kaarakkala": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Vieremä Kaarakkala": {
+                "begin": "2009-06-12T06:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Vieremä Kaarakkala",
+        "lon": "27.22",
+        "fmisid": "101726",
+        "wmo": "2834"
+    },
+    {
+        "name_en": "Vihti Maasoja",
+        "lat": "60.42",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Vihti Maasoja": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Vihti Maasoja": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Vihti Maasoja",
+        "lon": "24.4",
+        "fmisid": "100976",
+        "wmo": "2758"
+    },
+    {
+        "name_en": "Viitasaari Haapaniemi",
+        "lat": "63.08",
+        "datasets": {
+            "Säähavainnot: Viitasaari Haapaniemi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Viitasaari Haapaniemi": {
+                "begin": "1970-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Viitasaari Haapaniemi",
+        "lon": "25.86",
+        "fmisid": "101537",
+        "wmo": "2915"
+    },
+    {
+        "name_en": "Virolahti Koivuniemi",
+        "lat": "60.53",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Virolahti Koivuniemi": {
+                "begin": "1977-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Virolahti Koivuniemi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Virolahti Koivuniemi",
+        "lon": "27.67",
+        "fmisid": "101231",
+        "wmo": "2831"
+    },
+    {
+        "name_en": "Virrat Äijänneva",
+        "lat": "62.33",
+        "datasets": {
+            "Säähavaintojen vuorokausiarvot: Virrat Äijänneva": {
+                "begin": "1992-10-16T00:00:00Z",
+                "interval": 1,
+                "end": null
+            },
+            "Säähavainnot: Virrat Äijänneva": {
+                "begin": "2013-04-10T06:20:00Z",
+                "interval": 10,
+                "end": null
+            }
+        },
+        "name_fi": "Virrat Äijänneva",
+        "lon": "23.54",
+        "fmisid": "101310",
+        "wmo": "2735"
+    },
+    {
+        "name_en": "Ylitornio Meltosjärvi",
+        "lat": "66.53",
+        "datasets": {
+            "Säähavainnot: Ylitornio Meltosjärvi": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Ylitornio Meltosjärvi": {
+                "begin": "1964-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Ylitornio Meltosjärvi",
+        "lon": "24.65",
+        "fmisid": "101908",
+        "wmo": "2812"
+    },
+    {
+        "name_en": "Ylivieska airfield",
+        "lat": "64.05",
+        "datasets": {
+            "Säähavainnot: Ylivieska lentokenttä": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Ylivieska lentokenttä": {
+                "begin": "2000-05-27T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Ylivieska lentokenttä",
+        "lon": "24.72",
+        "fmisid": "101690",
+        "wmo": "2755"
+    },
+    {
+        "name_en": "Ähtäri Myllymäki",
+        "lat": "62.53",
+        "datasets": {
+            "Säähavainnot: Ähtäri Myllymäki": {
+                "begin": "2010-01-01T00:00:00Z",
+                "interval": 10,
+                "end": null
+            },
+            "Säähavaintojen vuorokausiarvot: Ähtäri Myllymäki": {
+                "begin": "1959-01-01T00:00:00Z",
+                "interval": 1,
+                "end": null
+            }
+        },
+        "name_fi": "Ähtäri Myllymäki",
+        "lon": "24.22",
+        "fmisid": "101520",
+        "wmo": "2924"
+    }
+]

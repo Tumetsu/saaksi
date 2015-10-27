@@ -46,6 +46,7 @@ module.exports = function(config) {
 'bower_components/angular-translate-storage-local/angular-translate-storage-local.js',
 'bower_components/async/lib/async.js',
 'bower_components/angular-local-storage/dist/angular-local-storage.js',
+'bower_components/angucomplete-alt/angucomplete-alt.js',
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",

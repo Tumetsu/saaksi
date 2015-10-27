@@ -49,7 +49,25 @@ angular.module('saaksiApp.fmi')
             return def.promise;
         };
 
+        /**
+         * Get the station metadata json-file.
+         * @param type: weather
+         * @returns {*}
+         */
+        this.getStationMetadata = function(type) {
+            var def = $q.defer();
+            $http({
+                url: 'data/' + type + '_stations_metadata.json',
+                method: 'GET'
+            })
+                .then(function(data) {
+                    def.resolve({err: null, data: data});
+                }, function(err) {
+                    def.resolve({err: err, data: null});
+                });
 
+            return def.promise;
+        };
 
         //TODO: Example for now.
         /*

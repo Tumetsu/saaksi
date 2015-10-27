@@ -27,6 +27,7 @@ angular
         'saaksiApp.dailyWeather',
         'saaksiApp.fmi',
         'pascalprecht.translate',
+        'angucomplete-alt',
         'saaksiApp.apiKey'
     ])
     .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider, localStorageServiceProvider) {
