@@ -28,9 +28,17 @@ angular
         'saaksiApp.fmi',
         'pascalprecht.translate',
         'angucomplete-alt',
+        'uiGmapgoogle-maps',
         'saaksiApp.apiKey'
     ])
-    .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider, localStorageServiceProvider) {
+    .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider,
+                      localStorageServiceProvider, uiGmapGoogleMapApiProvider) {
+        uiGmapGoogleMapApiProvider.configure({
+            //    key: 'your api key',
+            v: '3.20', //defaults to latest 3.X anyhow
+            libraries: 'weather,geometry,visualization'
+        });
+
         $translatePartialLoaderProvider.addPart('home');
         $translateProvider.useLocalStorage();
         $translateProvider.useSanitizeValueStrategy('sanitize');

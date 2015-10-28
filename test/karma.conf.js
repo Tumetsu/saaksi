@@ -47,6 +47,8 @@ module.exports = function(config) {
 'bower_components/async/lib/async.js',
 'bower_components/angular-local-storage/dist/angular-local-storage.js',
 'bower_components/angucomplete-alt/angucomplete-alt.js',
+'bower_components/angular-simple-logger/dist/angular-simple-logger.js',
+'bower_components/angular-google-maps/dist/angular-google-maps.js',
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",

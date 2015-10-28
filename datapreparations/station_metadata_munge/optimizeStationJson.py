@@ -21,6 +21,7 @@ with open('stationDatasets.json', 'r') as datafile:
                 daily_or_realtime_set = re.findall('vuorokausiarvot|Säähavainnot', s["title"])
                 if len(daily_or_realtime_set) > 0:
                     sets[s['title']] = {
+                        'name': s['title'],
                         'begin': s['begin'],
                         'end': s['end'],
                         'interval': get_interval(s['interval'])
