@@ -79,7 +79,7 @@
         <div class="row">
             <div class="large-8 columns">
                 <!-- Tähän datasettilistaus-->
-                <form>
+                <form name="datasetsform">
                     <div class="radio-buttons" ng-repeat="ds in selectedStation.originalObject.datasets">
                         <input  type="radio" name="datasets" ng-model="$parent.selectedDataset" ng-click="setDateLimits()" ng-value="ds" id="{{ds.name}}"><label for="{{ds.name}}">{{ds.name}}</label>
                     </div>
@@ -96,27 +96,45 @@
     <div class="weather-download-phase1">
         <div class="row">
             <h3>3. Select timespan of the data</h3>
+            <p> Available data range: {{selectedDataset.begin | date : 'dd.MM.yyyy'}} - {{selectedDataset.end | date : 'dd.MM.yyyy'}} </p>
         </div>
         <div class="row">
             <div class="large-8 columns">
                 <!-- Tähän timespan kontrollit-->
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Starting date</label>
-                        <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
-                            <input ng-model="beginDate" type="text"/>
-                        </datepicker>
+                <form novalidate angular-validator name="datarangeform">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Starting date</label>
+                            <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+                                <input ng-model="dateRange.begin"
+                                       class="error"
+                                       type="text"
+                                       name="begindate"
+                                       placeholder="{{selectedDataset.begin | date : 'dd.MM.yyyy'}}"
+                                       validator="validateDates(dateRange)"/>
+                                <small class="error" ng-show="dateRange.error.begin">{{dateRange.error.begin}} </small>
+                            </datepicker>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Ending date</label>
-                        <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
-                            <input ng-model="endDate" type="text"/>
-                        </datepicker>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Ending date</label>
+
+                            <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+                                <input ng-model="dateRange.end"
+                                       class="error"
+                                       type="text"
+                                       name="enddate"
+                                       placeholder="{{selectedDataset.end | date : 'dd.MM.yyyy'}}"
+                                       validator="validateDates(dateRange)"/>
+                                <small class="error" ng-show="dateRange.error.end">{{dateRange.error.end}} </small>
+                            </datepicker>
+
+                        </div>
                     </div>
-                </div>
+
+                </form>
             </div>
 
             <div class="large-4 columns panel radius">

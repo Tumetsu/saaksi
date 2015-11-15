@@ -21,6 +21,7 @@ angular
         'mm.foundation',
         'lodash',
         'metolib',
+        'moment',
         'pascalprecht.translate',
         'LocalStorageModule',
         '720kb.datepicker',
@@ -29,6 +30,7 @@ angular
         'pascalprecht.translate',
         'angucomplete-alt',
         'uiGmapgoogle-maps',
+        'angularValidator',
         'saaksiApp.apiKey'
     ])
     .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider,

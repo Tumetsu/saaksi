@@ -79,7 +79,6 @@ describe('fmiService', function () {
         });
 
         it('err not null if error http-response', function(done) {
-            var mockKey = '1234';
             $httpBackend.expectGET('data/weather_stations_metadata.json').respond(404);
             fService.getStationMetadata('weather').then(function(result) {
                 expect(result.err).toBeTruthy();
@@ -89,7 +88,7 @@ describe('fmiService', function () {
         });
 
         it('err if given type is invalid', function(done) {
-            fService.getStationMetadata('notCorrect').then(function(result) {
+            fService.getStationMetadata('notCorrect').then(function() {
                 done('Should have rejected.');
             }, function(result) {
                 expect(result.err.message).toBe('Not a valid metadata type');

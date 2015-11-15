@@ -49,6 +49,8 @@ module.exports = function(config) {
 'bower_components/angucomplete-alt/angucomplete-alt.js',
 'bower_components/angular-simple-logger/dist/angular-simple-logger.js',
 'bower_components/angular-google-maps/dist/angular-google-maps.js',
+'bower_components/tg-angular-validator/dist/angular-validator.js',
+'bower_components/moment/moment.js',
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",
