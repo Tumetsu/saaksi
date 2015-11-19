@@ -30,7 +30,7 @@ angular
         'pascalprecht.translate',
         'angucomplete-alt',
         'uiGmapgoogle-maps',
-        'angularValidator',
+        'ngAnimate',
         'saaksiApp.apiKey'
     ])
     .config(function ($stateProvider, $translateProvider, $translatePartialLoaderProvider, $urlRouterProvider,

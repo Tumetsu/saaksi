@@ -6,24 +6,51 @@ angular.module('saaksiApp.dailyWeather')
 
             $scope.defaultDate = new Date().toDateString();
             $scope.stations = null;
+            $scope.processStage = 0; //tells the stage of data input of user.
             $scope.selectedStation = null;
             $scope.stationMarker = {
                 id: 'stationMarker'
             };
 
-            $scope.selectedDataset = {
-                begin: '1991/1/1',
-                end: '1992/1/1'
-            };
+            function resetSelections() {
+                $scope.selectedDataset = {
+                    begin: '2014-04-25',
+                    end: '2014-04-25'
+                };
 
-            $scope.dateRange = {
-                begin: null,
-                end: null,
-                error: {
+                $scope.dateRange = {
                     begin: null,
-                    end: null
+                    end: null,
+                    error: {
+                        begin: null,
+                        end: null
+                    }
+                };
+            }
+            resetSelections();
+
+            /**
+             * Detects the stage of data input the user is in.
+             * TODO: Refactor for better readability
+             * @returns {number}
+             */
+            $scope.setProcessStage = function() {
+                if (!$scope.selectedStation) {
+                    $scope.processStage = 0;
+                } else {
+                    if (!$scope.selectedDataset.name) {
+                        $scope.processStage = 1;
+                    } else {
+                        if ($scope.dateRange.error.begin || $scope.dateRange.error.end) {
+                            $scope.processStage = 2;
+                        } else {
+                            $scope.processStage = 3;
+                        }
+
+                    }
                 }
             };
+
 
             /**
              * Retrieve the json data of the stations.
@@ -67,11 +94,17 @@ angular.module('saaksiApp.dailyWeather')
                 } else if (!endDate.isValid()) {
                     dateRange.error.end = 'End date is invalid';
                 }
+
+                $scope.setProcessStage();
             };
 
-            //handle updating the map
+            /**
+             * Observe when station is selected and map should be updated
+             */
             $scope.$watch('selectedStation', function(newValue, oldValue) {
                 if (newValue) {
+                    resetSelections();
+                    $scope.setProcessStage();
                     $scope.map = {
                         center: {
                             latitude: parseFloat(newValue.originalObject.lat),
@@ -82,7 +115,7 @@ angular.module('saaksiApp.dailyWeather')
                     $scope.stationMarker = {
                         coords: {
                             latitude: parseFloat(newValue.originalObject.lat),
-                            longitude: parseFloat(newValue.originalObject.lon),
+                            longitude: parseFloat(newValue.originalObject.lon)
                         },
                         id: 'stationMarker',
                         options: {}

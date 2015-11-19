@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="weather-download-phase1">
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 0">
         <div class="row">
             <h3>2. Select dataset</h3>
         </div>
@@ -81,7 +81,14 @@
                 <!-- Tähän datasettilistaus-->
                 <form name="datasetsform">
                     <div class="radio-buttons" ng-repeat="ds in selectedStation.originalObject.datasets">
-                        <input  type="radio" name="datasets" ng-model="$parent.selectedDataset" ng-click="setDateLimits()" ng-value="ds" id="{{ds.name}}"><label for="{{ds.name}}">{{ds.name}}</label>
+                        <input  type="radio"
+                                name="datasets"
+                                ng-model="$parent.selectedDataset"
+                                ng-click="setDateLimits()"
+                                ng-value="ds"
+                                ng-change="setProcessStage()"
+                                id="{{ds.name}}">
+                        <label for="{{ds.name}}">{{ds.name}}</label>
                     </div>
                 </form>
 
@@ -93,7 +100,7 @@
             </div>
     </div>
 
-    <div class="weather-download-phase1">
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 1">
         <div class="row">
             <h3>3. Select timespan of the data</h3>
             <p> Available data range: {{selectedDataset.begin | date : 'dd.MM.yyyy'}} - {{selectedDataset.end | date : 'dd.MM.yyyy'}} </p>
@@ -101,7 +108,7 @@
         <div class="row">
             <div class="large-8 columns">
                 <!-- Tähän timespan kontrollit-->
-                <form novalidate angular-validator name="datarangeform">
+                <form name="datarangeform">
                     <div class="row">
                         <div class="large-12 columns">
                             <label>Starting date</label>
@@ -111,7 +118,7 @@
                                        type="text"
                                        name="begindate"
                                        placeholder="{{selectedDataset.begin | date : 'dd.MM.yyyy'}}"
-                                       validator="validateDates(dateRange)"/>
+                                       ng-change="validateDates(dateRange)"/>
                                 <small class="error" ng-show="dateRange.error.begin">{{dateRange.error.begin}} </small>
                             </datepicker>
                         </div>
@@ -127,7 +134,7 @@
                                        type="text"
                                        name="enddate"
                                        placeholder="{{selectedDataset.end | date : 'dd.MM.yyyy'}}"
-                                       validator="validateDates(dateRange)"/>
+                                       ng-change="validateDates(dateRange)"/>
                                 <small class="error" ng-show="dateRange.error.end">{{dateRange.error.end}} </small>
                             </datepicker>
 
@@ -143,7 +150,7 @@
         </div>
     </div>
 
-    <div class="weather-download-phase1">
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 2">
         <div class="row">
             <h3>4. Retrieve the data</h3>
         </div>
