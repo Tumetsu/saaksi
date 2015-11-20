@@ -12,7 +12,7 @@ angular.module('saaksiApp.dailyWeather')
                 id: 'stationMarker'
             };
 
-            function resetSelections() {
+            $scope.resetSelections = function() {
                 $scope.selectedDataset = {
                     begin: '2014-04-25',
                     end: '2014-04-25'
@@ -26,8 +26,8 @@ angular.module('saaksiApp.dailyWeather')
                         end: null
                     }
                 };
-            }
-            resetSelections();
+            };
+            $scope.resetSelections();
 
             /**
              * Detects the stage of data input the user is in.
@@ -63,7 +63,8 @@ angular.module('saaksiApp.dailyWeather')
 
             //Fill in the missing end date of the station, set to current date
             $scope.setDateLimits = function() {
-                if (!$scope.selectedDataset.end) {
+
+                if (!$scope.selectedDataset.end || $scope.selectedDataset.end === 'Invalid Date') {
                     $scope.selectedDataset.end = new Date();
                 }
             };
@@ -72,7 +73,6 @@ angular.module('saaksiApp.dailyWeather')
              * Validate the current date range set by user and set the required error messages
              * to be shown in UI.
              * @param dateRange
-             * @returns {boolean}
              */
             $scope.validateDates = function(dateRange) {
                 var beginDate = moment.utc(dateRange.begin, 'DD.MM.YYYY', true);
@@ -95,7 +95,8 @@ angular.module('saaksiApp.dailyWeather')
                     dateRange.error.end = 'End date is invalid';
                 }
 
-                $scope.setProcessStage();
+                $scope.setProcessStage();   //TODO: side-effects to outer scope :/ Wrap to other function?
+                return dateRange;
             };
 
             /**
@@ -103,7 +104,7 @@ angular.module('saaksiApp.dailyWeather')
              */
             $scope.$watch('selectedStation', function(newValue, oldValue) {
                 if (newValue) {
-                    resetSelections();
+                    $scope.resetSelections();
                     $scope.setProcessStage();
                     $scope.map = {
                         center: {
