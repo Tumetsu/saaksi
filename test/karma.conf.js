@@ -79,6 +79,8 @@ module.exports = function(config) {
             "PhantomJS"
         ],
 
+        browserNoActivityTimeout: 100000,
+
         // Which plugins to enable
         plugins: [
             "karma-phantomjs-launcher",
@@ -86,6 +88,8 @@ module.exports = function(config) {
             "karma-coverage",
             "karma-ng-html2js-preprocessor"
         ],
+
+
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
