@@ -43,7 +43,7 @@ angular
 
         $translatePartialLoaderProvider.addPart('home');
         $translateProvider.useLocalStorage();
-        $translateProvider.useSanitizeValueStrategy('sanitize');
+        $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
         $translateProvider.useLoader('$translatePartialLoader', {
             urlTemplate: './i18n/{part}/{lang}.json'
         });

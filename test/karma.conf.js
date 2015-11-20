@@ -55,7 +55,6 @@ module.exports = function(config) {
             "app/lib/**/*.js",
             "app/scripts/**/*Module.js",
             "app/scripts/**/*.js",
-            "test/mock/**/*.js",
             "test/spec/**/*.js",
             "app/views/**/*.html",
             "app/partials/**/*.html"

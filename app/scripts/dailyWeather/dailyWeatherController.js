@@ -1,7 +1,7 @@
 'use strict';
 angular.module('saaksiApp.dailyWeather')
-    .controller('DailyWeatherCtrl', ['$scope', '$translatePartialLoader', 'apikeyService', 'fmiService', 'uiGmapGoogleMapApi', 'moment',
-        function ($scope, $translatePartialLoader, apikeyService, fmiService, uiGmapGoogleMapApi, moment) {
+    .controller('DailyWeatherCtrl', ['$scope', '$translatePartialLoader', '$filter','apikeyService', 'fmiService', 'uiGmapGoogleMapApi', 'moment',
+        function ($scope, $translatePartialLoader, $filter, apikeyService, fmiService, uiGmapGoogleMapApi, moment) {
             $translatePartialLoader.addPart('dailyweather');
 
             $scope.defaultDate = new Date().toDateString();
@@ -79,20 +79,20 @@ angular.module('saaksiApp.dailyWeather')
                 var endDate = moment.utc(dateRange.end, 'DD.MM.YYYY', true);
 
                 if (beginDate > endDate) {
-                    dateRange.error.begin = 'Begin date should be smaller than end date';
+                    dateRange.error.begin = $filter('translate')('DAILY.ERRORS.BEGIN_DATE_SMALLER_END');
                 } else if (beginDate < moment.utc($scope.selectedDataset.begin)) {
-                    dateRange.error.begin = 'Begin date should be bigger than earliest observation date';
+                    dateRange.error.begin = $filter('translate')('DAILY.ERRORS.BEGIN_DATE_BIGGER_EARLIEST');
                 } else if (endDate > moment.utc($scope.selectedDataset.end)) {
-                    dateRange.error.end = 'End date should not be bigger than the last observation date';
+                    dateRange.error.end = $filter('translate')('DAILY.ERRORS.END_DATE_SMALLER_LAST');
                 } else {
                     dateRange.error.begin = null;
                     dateRange.error.end = null;
                 }
 
                 if (!beginDate.isValid()) {
-                    dateRange.error.begin = 'Begin date is invalid';
+                    dateRange.error.begin = $filter('translate')('DAILY.ERRORS.BEGIN_DATE_INVALID');
                 } else if (!endDate.isValid()) {
-                    dateRange.error.end = 'End date is invalid';
+                    dateRange.error.end = $filter('translate')('DAILY.ERRORS.END_DATE_INVALID');
                 }
 
                 $scope.setProcessStage();   //TODO: side-effects to outer scope :/ Wrap to other function?

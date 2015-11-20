@@ -1,5 +1,5 @@
 <!-- partials/dailyweather.html -->
-<h1>Daily weather (WORK IN PROGRESS)</h1>
+<h1 translate>DAILY.HEADERS.DAILY_WEATHER</h1>
 <hr/>
 
 <div class="large-12 columns">
@@ -7,7 +7,7 @@
 
     <div class="weather-download-phase1">
         <div class="row">
-            <h3>1. Select weather station</h3>
+            <h3 translate>DAILY.HEADERS.SELECT_STATION</h3>
         </div>
 
         <div class="row">
@@ -35,19 +35,19 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <th>Name</th>
+                                        <th translate>DAILY.ELEMENTS.TABLE.NAME</th>
                                         <td>{{selectedStation.title}}</td>
                                     </tr>
                                     <tr>
-                                        <th>Coordinates (wgs84)</th>
+                                        <th translate>DAILY.ELEMENTS.TABLE.COORDINATES</th>
                                         <td>{{selectedStation.originalObject.lat}}, {{selectedStation.originalObject.lon}}</td>
                                     </tr>
                                     <tr>
-                                        <th>FMI ID</th>
+                                        <th translate>DAILY.ELEMENTS.TABLE.FMIID</th>
                                         <td>{{selectedStation.originalObject.fmisid}}</td>
                                     </tr>
                                     <tr>
-                                        <th>WMO</th>
+                                        <th translate>DAILY.ELEMENTS.TABLE.WMO</th>
                                         <td>{{selectedStation.originalObject.wmo}}</td>
                                     </tr>
                                 </tbody>
@@ -67,14 +67,14 @@
             </div>
 
             <div class="large-4 columns panel radius">
-                <p>Begin by finding the weather station you are interested in.</p>
+                <p translate>DAILY.INSTRUCTIONS.STATIONS</p>
             </div>
         </div>
     </div>
 
     <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 0">
         <div class="row">
-            <h3>2. Select dataset</h3>
+            <h3 translate>DAILY.HEADERS.SELECT_DATASET</h3>
         </div>
         <div class="row">
             <div class="large-8 columns">
@@ -95,15 +95,15 @@
             </div>
 
                 <div class="large-4 columns panel radius">
-                    <p>Each station has different weather observation datasets varying by the interval and timespan. Please select the one you are interested in.</p>
+                    <p translate>DAILY.INSTRUCTIONS.DATASET</p>
                 </div>
             </div>
     </div>
 
     <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 1">
         <div class="row">
-            <h3>3. Select timespan of the data</h3>
-            <p> Available data range: {{selectedDataset.begin | date : 'dd.MM.yyyy'}} - {{selectedDataset.end | date : 'dd.MM.yyyy'}} </p>
+            <h3 translate>DAILY.HEADERS.SELECT_TIMESPAN</h3>
+            <p> <span translate>DAILY.ELEMENTS.DATARANGE</span> {{selectedDataset.begin | date : 'dd.MM.yyyy'}} - {{selectedDataset.end | date : 'dd.MM.yyyy'}} </p>
         </div>
         <div class="row">
             <div class="large-8 columns">
@@ -145,23 +145,23 @@
             </div>
 
             <div class="large-4 columns panel radius">
-                <p>Specify the time span of the data you are interested in. It is faster to download smaller data sets. Note that small data interval such as with real time obervations might cause a large data set.</p>
+                <p translate>DAILY.INSTRUCTIONS.TIMESPAN</p>
             </div>
         </div>
     </div>
 
     <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 2">
         <div class="row">
-            <h3>4. Retrieve the data</h3>
+            <h3 translate>DAILY.HEADERS.RETRIEVE_DATA</h3>
         </div>
         <div class="row">
             <div class="large-8 columns">
                 <!-- Tähän timespan kontrollit-->
-                <button>Get the data!</button>
+                <button translate>DAILY.ELEMENTS.DOWNLOAD_BUTTON</button>
             </div>
 
             <div class="large-4 columns panel radius">
-                <p>After you are satisfied with settings, click the button to download the data set. It might take a while to complete so be patient!</p>
+                <p translate>DAILY.INSTRUCTIONS.RETRIEVE</p>
             </div>
         </div>
     </div>
