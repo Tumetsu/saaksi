@@ -67,4 +67,35 @@ describe('fmiService', function () {
         });
     });
 
+    describe('#getStationMetadata', function() {
+
+        it('proper data if given type is weather', function(done) {
+            $httpBackend.expectGET('data/weather_stations_metadata.json').respond({err: null, data: [1, 2, 3]});
+            fService.getStationMetadata('weather').then(function(result) {
+                expect(result.data.data[0]).toBe(1);
+                done();
+            });
+            $httpBackend.flush();
+        });
+
+        it('err not null if error http-response', function(done) {
+            $httpBackend.expectGET('data/weather_stations_metadata.json').respond(404);
+            fService.getStationMetadata('weather').then(function(result) {
+                expect(result.err).toBeTruthy();
+                done();
+            });
+            $httpBackend.flush();
+        });
+
+        it('err if given type is invalid', function(done) {
+            fService.getStationMetadata('notCorrect').then(function() {
+                done('Should have rejected.');
+            }, function(result) {
+                expect(result.err.message).toBe('Not a valid metadata type');
+                done();
+            });
+            $httpBackend.flush();
+        });
+    });
+
 });

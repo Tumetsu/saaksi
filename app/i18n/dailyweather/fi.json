@@ -1,5 +1,40 @@
 {
-    "HEADERS": {
-        "STATIONS": "Sääasemat"
+    "DAILY": {
+        "HEADERS": {
+            "STATIONS": "Sääasemat",
+            "DAILY_WEATHER": "Päivittäiset säähavainnot",
+            "SELECT_STATION": "1. Valitse sääasema",
+            "SELECT_DATASET": "2. Valitse aineisto",
+            "SELECT_TIMESPAN": "3. Valitse datan aikaväli",
+            "RETRIEVE_DATA": "4. Hae data"
+        },
+
+        "INSTRUCTIONS": {
+            "STATIONS": "Aloita etsimällä haluamasi sääasema.",
+            "DATASET": "Jokaisella asemalla on erilaisia aineistoja erilaisine aikaväleineen. Valitse haluamasi saatavilla olevista aineistoista.",
+            "TIMESPAN": "Määrittele datan aikaväli josta olet kiinnostunut. On nopeampaa ladata pieniä aineistoja. Pieni datapisteiden aikaväli esimerkiksi reaaliaikahavainnoissa saattaa tuottaa suuren aineiston.",
+            "RETRIEVE": "Kun olet tyytyväinen asetuksiin, paina nappia ladataksesi aineiston. Tämä voi viedä aikansa, joten ole kärsivällinen!"
+        },
+
+        "ELEMENTS": {
+            "DOWNLOAD_BUTTON": "Hae data!",
+            "DATARANGE": "Saatavilla ajalta:",
+            "TABLE": {
+                "NAME": "Nimi",
+                "COORDINATES": "Koordinaatit (wgs84)",
+                "FMIID": "FMI ID",
+                "WMO": "WMO"
+            }
+        },
+
+        "ERRORS": {
+            "BEGIN_DATE_SMALLER_END": "Alkupäivämäärän täytyy olla loppupäivämäärää pienempi",
+            "BEGIN_DATE_BIGGER_EARLIEST": "Alkupäivämäärän täytyy olla suurempi kuin aseman aikaisin havaintopäivämäärä",
+            "END_DATE_SMALLER_LAST": "Loppupäivämäärä ei saa olla suurempi kuin aseman viimeinen havaintopäivämäärä",
+            "BEGIN_DATE_INVALID": "Alkupäivämäärä on virheellinen",
+            "END_DATE_INVALID": "Loppupäivämäärä on virheellinen"
+        }
     }
+
+
 }

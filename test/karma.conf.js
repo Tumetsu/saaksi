@@ -46,12 +46,15 @@ module.exports = function(config) {
 'bower_components/angular-translate-storage-local/angular-translate-storage-local.js',
 'bower_components/async/lib/async.js',
 'bower_components/angular-local-storage/dist/angular-local-storage.js',
+'bower_components/angucomplete-alt/angucomplete-alt.js',
+'bower_components/angular-simple-logger/dist/angular-simple-logger.js',
+'bower_components/angular-google-maps/dist/angular-google-maps.js',
+'bower_components/moment/moment.js',
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",
             "app/scripts/**/*Module.js",
             "app/scripts/**/*.js",
-            "test/mock/**/*.js",
             "test/spec/**/*.js",
             "app/views/**/*.html",
             "app/partials/**/*.html"
@@ -76,6 +79,8 @@ module.exports = function(config) {
             "PhantomJS"
         ],
 
+        browserNoActivityTimeout: 100000,
+
         // Which plugins to enable
         plugins: [
             "karma-phantomjs-launcher",
@@ -83,6 +88,8 @@ module.exports = function(config) {
             "karma-coverage",
             "karma-ng-html2js-preprocessor"
         ],
+
+
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
