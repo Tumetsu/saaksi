@@ -125,5 +125,16 @@ angular.module('saaksiApp.dailyWeather')
 
             });
 
+            $scope.downloadData = function() {
+                console.log($scope.selectedStation);
+                console.log($scope.selectedDataset);
+                console.log($scope.dateRange);
+                var key = apikeyService.getStoredKey();
+                fmiService.retrieveWeatherData(key, {
+                    begin: moment.utc($scope.dateRange.begin, 'DD.MM.YYYY', true).toDate(),
+                    end: moment.utc($scope.dateRange.end, 'DD.MM.YYYY', true).toDate(),
+                }, $scope.selectedStation.originalObject)
+            }
+
 
         }]);

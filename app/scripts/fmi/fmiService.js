@@ -3,6 +3,10 @@ angular.module('saaksiApp.fmi')
     .service('fmiService', ['$window', '$http', '$q', 'metolib', function ($window, $http, $q, metolib) {
         var connection = new metolib.WfsConnection();
 
+        function serverUrl(key) {
+            return 'http://data.fmi.fi/fmi-apikey/' + key + '/wfs'
+        }
+
         /**
          * Makes a test query to FMI's service with provided API key and returns the response.
          * @param key
@@ -11,7 +15,7 @@ angular.module('saaksiApp.fmi')
         this.validateApiKey = function(key) {
             var def = $q.defer();
             $http({
-                url: 'http://data.fmi.fi/fmi-apikey/' + key + '/wfs',
+                url: serverUrl(key),
                 method: 'GET',
                 params: {
                     request: 'getCapabilities'
@@ -78,6 +82,32 @@ angular.module('saaksiApp.fmi')
             return def.promise;
         };
 
+
+        /**
+         * Make a weather data request to FMI servers through Metolib.
+         * @param key
+         */
+        this.retrieveWeatherData = function(key, dateRange, station) {
+            console.log(station);
+            console.log(dateRange);
+            console.log(serverUrl(key));
+            if (connection.connect(serverUrl(key), 'fmi::observations::weather::daily::multipointcoverage')) {
+                connection.getData({
+                    requestParameter: null, //["rrday"],
+                    begin: dateRange.begin,
+                    end: dateRange.end,
+                    timestep: 60 * 60 * 1000,
+                    fmisid: station.fmisid,
+                    callback: function (data, errors) {
+                        // Handle the data and errors object in a way you choose.
+                        // Here, we delegate the content for a separate handler function.
+                        // See parser documentation from source code comments for more details.
+                        console.log(errors);
+                        console.log(data);
+                    }
+                })
+            }
+        };
         //TODO: Example for now.
         /*
         this.exampleQuery = function(key) {
