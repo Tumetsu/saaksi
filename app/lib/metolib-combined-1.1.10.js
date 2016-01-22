@@ -2223,8 +2223,11 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
         }
 
         // Make sure parameters are available as a single string.
+        console.log(requestParameter)
         if (requestParameter && _.isArray(requestParameter)) {
             requestParameter = requestParameter.join();
+        } else {
+            requestParameter = null;    //set parameter to null if it is invalid or intentionally null
         }
 
         // Timestep and numOfTimesteps are alternative to each others. Timestep is the first choice of the two.
@@ -2236,7 +2239,6 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
         // Check that required data is available and parameters are of the correct type.
         var urlCheck = url && _.isString(url);
         var storedQueryCheck = storedQueryId && _.isString(storedQueryId);
-        var parameterCheck = requestParameter && _.isString(requestParameter);
         var periodCheck = begin instanceof Date && end instanceof Date && begin.getTime() <= end.getTime() && (!timestep || _.isNumber(timestep) );
         var geoidCheck = _.isNumber(geoid) || geoid && _.isString(geoid) || _.isArray(geoid) && geoid.length;
         var wmoCheck = _.isNumber(wmo) || wmo && _.isString(wmo) || _.isArray(wmo) && wmo.length;
@@ -2245,7 +2247,7 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
         var bboxCheck = bbox && _.isString(bbox);
         var locationGivenCheck = geoidCheck || wmoCheck || fmisidCheck || sitesCheck || bboxCheck;
         var crsCheck = !crs || _.isString(crs);
-        if (urlCheck && storedQueryCheck && parameterCheck && periodCheck && locationGivenCheck && crsCheck) {
+        if (urlCheck && storedQueryCheck && periodCheck && locationGivenCheck && crsCheck) {
             // Check if begin and end times should be adjusted for server. They need to be exact for minutes.
             if (!denyTimeAdjusting) {
                 begin.setTime(adjustBeginTime(timestep, begin).getTime());
@@ -2270,7 +2272,10 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
             // Parameters are given through the API. Therefore, make sure parameters do not
             // contain illegal characters when inserted into the URL. Parameters that should
             // be numbers are checked above and numbers are always accepted.
-            requestParameter = fi.fmi.metoclient.metolib.Utils.encodeUriComponent(requestParameter);
+            if (requestParameter) {
+                requestParameter = fi.fmi.metoclient.metolib.Utils.encodeUriComponent(requestParameter);
+            }
+
 
             var ind;
             var geoidParameter = "";
@@ -2364,7 +2369,15 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
 
             var urlQueryExtension = handleQueryExtension(queryExtension);
 
-            var requestUrl = url + urlQueryDelimiter + myConstants.REQUEST_GET_FEATURE + storedQueryIdParameter + myConstants.REQUEST_PARAMETERS + requestParameter + myConstants.REQUEST_BEGIN + begin + myConstants.REQUEST_END + end + timeStepParameter + geoidParameter + wmoParameter + fmisidParameter + sitesParameter + bboxParameter + crsParameter + urlQueryExtension;
+            //Handle situation where requestParameter might be null or not.
+            var requestUrl = url + urlQueryDelimiter + myConstants.REQUEST_GET_FEATURE + storedQueryIdParameter;
+            console.log(requestParameter)
+            if (requestParameter) {
+                requestUrl += myConstants.REQUEST_PARAMETERS + requestParameter;
+            }
+
+            requestUrl += myConstants.REQUEST_BEGIN + begin + myConstants.REQUEST_END + end + timeStepParameter + geoidParameter + wmoParameter + fmisidParameter + sitesParameter + bboxParameter + crsParameter + urlQueryExtension;
+            console.log(requestUrl);
             requestAndParseXml(requestUrl, callback);
 
         } else {
@@ -2989,9 +3002,9 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
             this.getNotUsedSince = function() {
                 return age;
             };
-            
+
             this.fetchFailed = function() {
-              return fetchError !== null;  
+              return fetchError !== null;
             };
 
             this.markForRecycling = function() {
@@ -3003,7 +3016,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
 
             this.markForMerging = function(merge) {
                 if (merge === true){
-                    waitingMerging = true;                    
+                    waitingMerging = true;
                     if (dispatcher) {
                         dispatcher('blockMarkedForMerge', thisBlock);
                     }
@@ -3076,7 +3089,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                             if (err) {
                                 fetchError = err;
                             }
-                            data = result;                                
+                            data = result;
                             fetched = true;
                             if (callbacks.length === 0) {
                                 fetching = false;
@@ -3161,7 +3174,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
         var maxCacheDataSize = 50000;
         var strictErrorHandling = true;
         var errorFillValue = NaN;
-        
+
         var fetchers = {};
         var cachedDataSize = 0;
         var cacheHits = 0;
@@ -3276,7 +3289,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                                 cb(err);
                             }
                             else {
-                                fillWith(combinedData, data, taskDef.location, taskDef.parameter, 0, 0, block1.getPointCount(), cb);                                
+                                fillWith(combinedData, data, taskDef.location, taskDef.parameter, 0, 0, block1.getPointCount(), cb);
                             }
                         });
                     },
@@ -3289,7 +3302,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                                 cb(err);
                             }
                             else {
-                                fillWith(combinedData, data, taskDef.location, taskDef.parameter, block1.getPointCount(), 0, block2.getPointCount(), cb);                                
+                                fillWith(combinedData, data, taskDef.location, taskDef.parameter, block1.getPointCount(), 0, block2.getPointCount(), cb);
                             }
                         });
                     }
@@ -3725,7 +3738,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                     //we fetch them just to cache them, but otherwise
                     //ignore the results completely:
                     dataBlock.getDataAsync(function(){
-                        dataBlock.unpin();                        
+                        dataBlock.unpin();
                     });
 
                     //and continue the loop:
@@ -3773,12 +3786,12 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                         // Notice, errors may have occurred but data is still given because it should be good enough.
                         // Therefore, do not ignore given data if it is available. It is up to the data provider to make
                         // sure that data is undefined if it should not be handled in cache.
-                        
+
                         //Ilkka Rinne/2013-09-02: This is inconsistent with the node.js callback error conventions:
                         //You should always get either an error or result, never both.
                         //http://nodemanual.org/latest/nodejs_dev_guide/working_with_callbacks.html
                         //When would you want to return errors but also useable data?
-                        
+
                         if (strictErrorHandling || !data) {
                             fillValue = errorFillValue;
                         }
@@ -3790,7 +3803,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                             progressCallback(err, includeStart, includeEnd);
                         }
                         dataBlock.unpin();
-                        
+
                         //always succeed, even with fetch error: we want to return the rest of the data anyway
                         notify();
                     });
@@ -3964,7 +3977,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                 strictErrorHandling = false;
             }
         }
-        
+
         if (properties.errorFillValue !== undefined) {
             errorFillValue = properties.errorFillValue;
         }
