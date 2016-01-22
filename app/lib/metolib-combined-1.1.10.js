@@ -2223,7 +2223,6 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
         }
 
         // Make sure parameters are available as a single string.
-        console.log(requestParameter)
         if (requestParameter && _.isArray(requestParameter)) {
             requestParameter = requestParameter.join();
         } else {
@@ -2371,13 +2370,11 @@ fi.fmi.metoclient.metolib.WfsRequestParser = (function() {
 
             //Handle situation where requestParameter might be null or not.
             var requestUrl = url + urlQueryDelimiter + myConstants.REQUEST_GET_FEATURE + storedQueryIdParameter;
-            console.log(requestParameter)
             if (requestParameter) {
                 requestUrl += myConstants.REQUEST_PARAMETERS + requestParameter;
             }
 
             requestUrl += myConstants.REQUEST_BEGIN + begin + myConstants.REQUEST_END + end + timeStepParameter + geoidParameter + wmoParameter + fmisidParameter + sitesParameter + bboxParameter + crsParameter + urlQueryExtension;
-            console.log(requestUrl);
             requestAndParseXml(requestUrl, callback);
 
         } else {
@@ -2777,7 +2774,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                 taskDef.location.push(placeholder);
             }
         }
-
+        /*
         if (!_.isArray(taskDef.parameter)) {
             if (!_.isString(taskDef.parameter)) {
                 throw 'taskDef must contain a \'parameter\' property of either an array or a string type';
@@ -2787,6 +2784,7 @@ fi.fmi.metoclient.metolib.SplitterCache = (function() {
                 taskDef.parameter.push(placeholder);
             }
         }
+        */
 
         if (!_.isNumber(taskDef.resolution)) {
             throw 'taskDef must contain a \'resolution\' property of numeric type';
@@ -4786,7 +4784,6 @@ fi.fmi.metoclient.metolib.WfsConnection = (function() {
             }
             var taskDef = {
                 service : DATA_FETCHER_NAME_SITES,
-                parameter : _.isString(options.requestParameter) ? options.requestParameter.split(PARAMETER_SEPARATOR) : options.requestParameter,
                 // Make sure parameter(s) are integers instead of Date objects when they are given to cache.
                 start : beginDate instanceof Date ? beginDate.getTime() : beginDate,
                 end : endDate instanceof Date ? endDate.getTime() : endDate,
@@ -4794,6 +4791,10 @@ fi.fmi.metoclient.metolib.WfsConnection = (function() {
                 crs : options.crs,
                 queryExtension : options.queryExtension
             };
+            if (options.requestParameter) {
+                taskDef.parameter = _.isString(options.requestParameter) ? options.requestParameter.split(PARAMETER_SEPARATOR) : options.requestParameter;
+            }
+
             // Because locations can be given in multiple ways, location related properties are
             // set separately for taskDef to combine all location informations for cache.
             setTaskDefLocations(taskDef, options);
@@ -4879,6 +4880,7 @@ fi.fmi.metoclient.metolib.WfsConnection = (function() {
 
         } catch(e) {
             var errorStr = "ERROR: API level error occurred in a synchronous flow!";
+            console.log(e);
             if ("undefined" !== typeof console && console) {
                 console.error(errorStr);
             }
