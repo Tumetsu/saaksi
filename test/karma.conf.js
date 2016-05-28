@@ -53,10 +53,11 @@ module.exports = function(config) {
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",
-            "app/scripts/**/*Module.js",
-            "app/scripts/**/*.js",
+            "app/src/**/*Module.js",
+            "app/src/**/*.js",
             "test/spec/**/*.js",
             "app/views/**/*.html",
+            "app/src/**/*.html",
             "app/partials/**/*.html"
         ],
 
@@ -114,9 +115,10 @@ module.exports = function(config) {
             // source files, that you wanna generate coverage for
             // do not include tests or libraries
             // (these files will be instrumented by Istanbul)
-            'app/scripts/**/*.js': ['coverage'],
+            'app/src/**/!(.spec).js': ['coverage'],
             'app/views/**/*.html': ['ng-html2js'],
-            'app/partials/**/*.html': ['ng-html2js']
+            'app/partials/**/*.html': ['ng-html2js'],
+            'app/src/**/*.html': ['ng-html2js']
         },
 
         // optionally, configure the reporter

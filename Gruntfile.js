@@ -41,14 +41,14 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['!**/*.spec.js', '<%= yeoman.app %>/src/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
       },
       jsTest: {
-        files: ['test/spec/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/src/{,*/}.spec.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
       compass: {
@@ -138,14 +138,15 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/src/{,*/}*.js',
+          '!**/*.spec.js'
         ]
       },
       test: {
         options: {
           jshintrc: 'test/.jshintrc'
         },
-        src: ['test/spec/{,*/}*.js']
+        src: '<%= yeoman.app %>/src/{,*/}*.spec.js'
       }
     },
 
@@ -225,7 +226,7 @@ module.exports = function (grunt) {
         cssDir: '.tmp/styles',
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
+        javascriptsDir: '<%= yeoman.app %>/src',
         fontsDir: '<%= yeoman.app %>/styles/fonts',
         importPath: './bower_components',
         httpImagesPath: '/images',
@@ -251,10 +252,11 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
-          '<%= yeoman.dist %>/scripts/{,*/}*.js',
+          '<%= yeoman.dist %>/src/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/styles/fonts/*',
+          '!**/*.spec.js'
         ]
       }
     },
@@ -282,7 +284,7 @@ module.exports = function (grunt) {
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
-      js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
+      js: ['!**/*.spec.js', '<%= yeoman.dist %>/src/{,*/}*.js'],
       options: {
         assetsDirs: [
           '<%= yeoman.dist %>',
@@ -311,8 +313,8 @@ module.exports = function (grunt) {
     // uglify: {
     //   dist: {
     //     files: {
-    //       '<%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%= yeoman.dist %>/scripts/scripts.js'
+    //       '<%= yeoman.dist %>/src/src.js': [
+    //         '<%= yeoman.dist %>/src/src.js'
     //       ]
     //     }
     //   }
@@ -365,7 +367,7 @@ module.exports = function (grunt) {
         options: {
           module: 'saaksiApp',
           htmlmin: '<%= htmlmin.dist.options %>',
-          usemin: 'scripts/scripts.js'
+          usemin: 'src/src.js'
         },
         cwd: '<%= yeoman.app %>',
         src: 'views/{,*/}*.html',
@@ -379,9 +381,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '.tmp/concat/scripts',
+          cwd: '.tmp/concat/src',
           src: '*.js',
-          dest: '.tmp/concat/scripts'
+          dest: '.tmp/concat/src'
         }]
       }
     },
@@ -457,7 +459,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('badger', 'Create coverage badge to dist folder afetr build', function(target) {
+  grunt.registerTask('badger', 'Create coverage badge to dist folder after build', function(target) {
       var done = this.async();
       var opts = {
           //badgeFileName: "cobertura", // No extension, Defaults to "coverage"

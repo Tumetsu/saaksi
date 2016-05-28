@@ -75,7 +75,7 @@ angular
 
             .state('app.download.apikey', {
                 url: '/apikey',
-                templateUrl: 'partials/download/apikey.html',
+                templateUrl: 'src/apikey/apikey.html',
                 controller: 'ApikeyCtrl'
             })
 
