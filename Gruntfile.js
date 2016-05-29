@@ -28,24 +28,34 @@ module.exports = function (grunt) {
   //used to create a coverage badge for Github
   var badger = require('istanbul-cobertura-badger');
 
+  grunt.loadNpmTasks('grunt-ngsrc');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
 
+    ngsrc: {
+      target: {
+        cwd: '<%= yeoman.app %>',
+        src: ['src/**/*.js', '!src/**/*.spec.js'],
+        dest: ['<%= yeoman.app %>/index.html']
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
+      js: {
+         files: ['!**/*.spec.js', '<%= yeoman.app %>/src/{,*/}*.js'],
+         tasks: ['newer:jshint:all', 'copy:index', 'ngsrc', 'wiredep'],
+         options: {
+           livereload: '<%= connect.options.livereload %>'
+         }
+      },
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
-      },
-      js: {
-        files: ['!**/*.spec.js', '<%= yeoman.app %>/src/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        }
       },
       jsTest: {
         files: ['<%= yeoman.app %>/src/{,*/}.spec.js'],
@@ -63,7 +73,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/{,*/}*.html',
+          '<%= yeoman.app %>/src/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -144,7 +154,7 @@ module.exports = function (grunt) {
       },
       test: {
         options: {
-          jshintrc: 'test/.jshintrc'
+          jshintrc: '.jshintrc'
         },
         src: '<%= yeoman.app %>/src/{,*/}*.spec.js'
       }
@@ -397,6 +407,10 @@ module.exports = function (grunt) {
 
     // Copies remaining files to places other tasks can use
     copy: {
+      index: {
+          dest: '<%= yeoman.app %>/index.html',
+          src: '<%= yeoman.app %>/index.tpl.html'
+      },
       dist: {
         files: [{
           expand: true,
@@ -411,7 +425,7 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*',
             'i18n/**/*.json',
             'data/**/*.json',
-            'partials/**/*.html',
+            'src/**/*.html',
             'lib/**/*.js',
             'cov/**/*.html'
           ]
@@ -453,7 +467,7 @@ module.exports = function (grunt) {
     // Test settings
     karma: {
       unit: {
-        configFile: 'test/karma.conf.js',
+        configFile: 'karma.conf.js',
         singleRun: true
       }
     }
@@ -491,6 +505,8 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'copy:index',
+      'ngsrc',
       'wiredep',
       'concurrent:server',
       'autoprefixer:server',
@@ -506,6 +522,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
+    'copy:index',
+    'ngsrc',
     'wiredep',
     'concurrent:test',
     'autoprefixer',
@@ -515,6 +533,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'copy:index',
+    'ngsrc',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -533,7 +553,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
     'test',
     'build'
   ]);

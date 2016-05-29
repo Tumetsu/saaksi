@@ -11,7 +11,7 @@ module.exports = function(config) {
         autoWatch: true,
 
         // base path, that will be used to resolve files and exclude
-        basePath: '../',
+        basePath: '.',
 
         // testing framework to use (jasmine/mocha/qunit/...)
         // as well as any additional frameworks (requirejs/chai/sinon/...)
@@ -53,7 +53,7 @@ module.exports = function(config) {
 'bower_components/angular-mocks/angular-mocks.js',
 // endbower
             "app/lib/**/*.js",
-            "app/src/**/*Module.js",
+            "app/src/**/*module.js",
             "app/src/**/*.js",
             "test/spec/**/*.js",
             "app/views/**/*.html",
