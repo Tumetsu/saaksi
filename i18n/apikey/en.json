@@ -1,0 +1,19 @@
+{
+    "APIKEY": {
+        "HEADER": "API-key",
+        "EXPLANATION": "Before using Saaksi you need FMI's api-key to access the data. Follow the instructions below to get free api-key and copy it to the text-field below.",
+
+        "INSTRUCTIONS": {
+            "1": "Go to <a href='https://ilmatieteenlaitos.fi/avoin-data'>FMI's open data page</a> and log in you account or register a new one.",
+            "2": "In your \"Omat tiedot\" page in bottom there should be \"tunnisteavain (fmi-apikey)\".",
+            "3": "Copy the api-key and paste it to the field below.",
+
+            "SAVEINFO": "The API-key is saved on your browser, not on Saaksi's server.",
+            "MORE": "<a href='http://tumetsu.github.io/FMI-weather-downloader/quickstart/englishguide.html'>More detailed instructions</a>",
+            "SAVE": "Continue",
+            "REMOVE": "Remove api-key"
+        },
+
+        "INVALIDKEY": "Invalid API-key. Check for typos."
+    }
+}

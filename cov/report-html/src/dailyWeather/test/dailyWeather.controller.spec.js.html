@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/dailyWeather/test/dailyWeather.controller.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">src/dailyWeather/test/</a> dailyWeather.controller.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>107/107</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.83% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>23/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>107/107</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+describe('DailyWeatherCtrl', function () {
+&nbsp;
+    // load the controller's module
+    beforeEach(module('saaksiApp'));
+    beforeEach(module('saaksiApp.dailyWeather'));
+    beforeEach(module('templates'));
+&nbsp;
+    beforeEach(module(function ($stateProvider) {
+        $stateProvider.state('A', { url: '/asd' });
+    }));
+&nbsp;
+    var DailyWeatherCtrl,
+        $httpBackend,
+        $q,
+        scope,
+        mockFmiService;
+&nbsp;
+    var sampleStationData = {
+        "fmisid": "101533",
+        "wmo": "2787",
+        "name_en": "Alajärvi Möksy",
+        "name_fi": "Alajärvi Möksy",
+        "datasets": {
+            "ds1": {
+                "interval": 1,
+                "begin": "1996-06-27T00:00:00Z",
+                "name": "Säähavaintojen vuorokausiarvot: Alajärvi Möksy",
+                "end": null
+            },
+            "ds2": {
+                "interval": 10,
+                "begin": "2010-01-01T00:00:00Z",
+                "name": "Säähavainnot: Alajärvi Möksy",
+                "end": null
+            }
+        },
+        "lon": "24.26",
+        "lat": "63.09"
+    };
+&nbsp;
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function ($controller, $rootScope, _$q_, _$httpBackend_) {
+        scope = $rootScope.$new();
+        $q = _$q_;
+        $httpBackend = _$httpBackend_;
+&nbsp;
+        //mocks
+        mockFmiService = {
+            getStationMetadata: <span class="fstat-no" title="function not covered" >function () {</span>}
+        };
+&nbsp;
+        //mock implementation to return station metadata
+        spyOn(mockFmiService, 'getStationMetadata').and.callFake(function() {
+            var def = $q.defer();
+            def.resolve({
+                data:[sampleStationData]
+            });
+            return def.promise;
+        });
+&nbsp;
+        DailyWeatherCtrl = $controller('DailyWeatherCtrl', {
+            $scope: scope,
+            // place here mocked dependencies
+            fmiService: mockFmiService
+        });
+&nbsp;
+        $httpBackend.whenGET(/i18n.*/).respond(200, '');
+    }));
+&nbsp;
+&nbsp;
+    it('expect to retrieve the station metadata', function (done) {
+        scope.$digest();
+        expect(mockFmiService.getStationMetadata.calls.count()).toBe(1);
+        expect(scope.stations[0].fmisid).toEqual(sampleStationData.fmisid);
+        done();
+    });
+&nbsp;
+    describe('#resetSelections', function() {
+        it('expect function to reset selectedDataset and dateRange to initial values', function() {
+            //setup test data
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.dateRange.begin = '02.11.2015';
+            scope.dateRange.end = '04.11.2015';
+            //reset test data
+            scope.resetSelections();
+            expect(scope.selectedDataset.name).toBeUndefined();
+            expect(scope.dateRange.begin).toBeNull();
+            expect(scope.dateRange.end).toBeNull();
+            expect(scope.dateRange.error.begin).toBeNull();
+            expect(scope.dateRange.error.end).toBeNull();
+        });
+    });
+&nbsp;
+    describe('#setProcessStage', function() {
+        it('expect to set processStage to 0 when selectedStation is not set', function() {
+            scope.resetSelections();
+            scope.setProcessStage();
+            expect(scope.processStage).toEqual(0);
+        });
+&nbsp;
+        it('expect to set processStage to 1 when selectedDataset is not set', function() {
+            scope.resetSelections();
+            scope.selectedStation = sampleStationData;
+            scope.setProcessStage();
+            expect(scope.processStage).toEqual(1);
+        });
+&nbsp;
+        it('expect to set processStage to 2 when range has error', function() {
+            scope.resetSelections();
+            scope.selectedStation = sampleStationData;
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.dateRange.error.begin = 'Error';
+            scope.setProcessStage();
+            expect(scope.processStage).toEqual(2);
+        });
+&nbsp;
+        it('expect to set processStage to 3 when everything is ok', function() {
+            scope.resetSelections();
+            scope.selectedStation = sampleStationData;
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.setProcessStage();
+            expect(scope.processStage).toEqual(3);
+        });
+    });
+&nbsp;
+    describe('#setDateLimits', function() {
+        it('expect function to change selectedDateset\'s end to current date', function() {
+            //setup test data
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.setDateLimits();
+            expect(scope.selectedDataset.end.setHours(0,0,0,0)).toEqual(new Date().setHours(0,0,0,0));
+&nbsp;
+        });
+&nbsp;
+        it('expect function to not change selectedDateset\'s end if it is already set', function() {
+            //setup test data
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.selectedDataset.end = new Date(1234);
+            scope.setDateLimits();
+            expect(scope.selectedDataset.end.setHours(0,0,0,0)).not.toEqual(new Date().setHours(0,0,0,0));
+        });
+    });
+&nbsp;
+    describe('#validateDates', function() {
+        it('expect error in daterange when begin is smaller than dataset\'s start', function() {
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.setDateLimits();
+            var testRange = {
+                begin: '01.01.2009',
+                end: '01.01.2011',
+                error: {
+                    begin: null,
+                    end: null
+                }
+            };
+            var result = scope.validateDates(testRange);
+            expect(result.error.begin).toEqual('DAILY.ERRORS.BEGIN_DATE_BIGGER_EARLIEST');
+        });
+&nbsp;
+        it('expect error in daterange when end is bigger than dataset\'s end', function() {
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.selectedDataset.end = new Date('2015-11-20T11:54:21.374Z');
+            scope.setDateLimits();
+            var testRange = {
+                begin: '01.02.2011',
+                end: '01.01.2025',
+                error: {
+                    begin: null,
+                    end: null
+                }
+            };
+            var result = scope.validateDates(testRange);
+            expect(result.error.end).toEqual('DAILY.ERRORS.END_DATE_SMALLER_LAST');
+        });
+&nbsp;
+        it('expect error in daterange when end is smaller than begin', function() {
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.selectedDataset.end = new Date('2015-11-20T11:54:21.374Z');
+            scope.setDateLimits();
+            var testRange = {
+                begin: '01.02.2012',
+                end: '01.01.2011',
+                error: {
+                    begin: null,
+                    end: null
+                }
+            };
+            var result = scope.validateDates(testRange);
+            expect(result.error.begin).toEqual('DAILY.ERRORS.BEGIN_DATE_SMALLER_END');
+        });
+&nbsp;
+        it('expect error when begin dates are in invalid format', function() {
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.setDateLimits();
+            var testRange = {
+                begin: '01.02.201rter2',
+                end: '01.01.2011',
+                error: {
+                    begin: null,
+                    end: null
+                }
+            };
+            var result = scope.validateDates(testRange);
+            expect(result.error.begin).toEqual('DAILY.ERRORS.BEGIN_DATE_INVALID');
+        });
+&nbsp;
+        it('expect error when end dates are in invalid format', function() {
+            scope.selectedDataset = sampleStationData.datasets.ds2;
+            scope.setDateLimits();
+            var testRange = {
+                begin: '01.02.2012',
+                end: '01.01.2hdgf011',
+                error: {
+                    begin: null,
+                    end: null
+                }
+            };
+            var result = scope.validateDates(testRange);
+            expect(result.error.end).toEqual('DAILY.ERRORS.END_DATE_INVALID');
+        });
+&nbsp;
+    });
+&nbsp;
+    describe('#selectedStation watch', function() {
+&nbsp;
+        it('expect updated map after station selection', function() {
+            scope.selectedStation = {
+                originalObject: sampleStationData
+            };
+            scope.$digest();
+            expect(scope.map.center.latitude).toEqual(parseFloat(sampleStationData.lat));
+            expect(scope.map.center.longitude).toEqual(parseFloat(sampleStationData.lon));
+        });
+    });
+&nbsp;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon May 30 2016 20:57:37 GMT+0000 (UTC)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

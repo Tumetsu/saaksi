@@ -1,0 +1,40 @@
+{
+    "DAILY": {
+        "HEADERS": {
+            "STATIONS": "Weather stations",
+            "DAILY_WEATHER": "Daily weather",
+            "SELECT_STATION": "1. Select weather station",
+            "SELECT_DATASET": "2. Select dataset",
+            "SELECT_TIMESPAN": "3. Select time span of the data",
+            "RETRIEVE_DATA": "4. Retrieve the data"
+        },
+
+        "INSTRUCTIONS": {
+            "STATIONS": "Begin by finding the weather station you are interested in.",
+            "DATASET": "Each station has different weather observation datasets varying by the interval and timespan. Please select the one you are interested in.",
+            "TIMESPAN": "Specify the time span of the data you are interested in. It is faster to download smaller data sets. Note that small data interval such as with real time obervations might cause a large data set.",
+            "RETRIEVE": "After you are satisfied with settings, click the button to download the data set. It might take a while to complete so be patient!"
+        },
+
+        "ELEMENTS": {
+            "DOWNLOAD_BUTTON": "Get the data!",
+            "DATARANGE": "Available data range:",
+            "TABLE": {
+                "NAME": "Name",
+                "COORDINATES": "Coordinates (wgs84)",
+                "FMIID": "FMI ID",
+                "WMO": "WMO"
+            }
+        },
+
+        "ERRORS": {
+            "BEGIN_DATE_SMALLER_END": "Begin date should be smaller than end date",
+            "BEGIN_DATE_BIGGER_EARLIEST": "Begin date should be bigger than earliest observation date",
+            "END_DATE_SMALLER_LAST": "End date should not be bigger than the last observation date",
+            "BEGIN_DATE_INVALID": "Begin date is invalid",
+            "END_DATE_INVALID": "End date is invalid"
+        }
+
+    }
+
+}

@@ -1,0 +1,177 @@
+<!-- partials/dailyweather.html -->
+<h1 translate>DAILY.HEADERS.DAILY_WEATHER</h1>
+<hr/>
+
+<div class="large-12 columns">
+
+
+    <div class="weather-download-phase1">
+        <div class="row">
+            <h3 translate>DAILY.HEADERS.SELECT_STATION</h3>
+        </div>
+
+        <div class="row">
+
+            <div class="large-8 columns">
+
+                <div class="row">
+
+                    <div class="large-12 columns">
+                        <angucomplete-alt id="ex1"
+                                          placeholder="Search stations"
+                                          pause="100"
+                                          selected-object="selectedStation"
+                                          local-data="stations"
+                                          search-fields="name_fi"
+                                          title-field="name_fi"
+                                          minlength="1"
+                                          input-class="form-control form-control-small"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <div class="" ng-show="selectedStation">
+
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th translate>DAILY.ELEMENTS.TABLE.NAME</th>
+                                        <td>{{selectedStation.title}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th translate>DAILY.ELEMENTS.TABLE.COORDINATES</th>
+                                        <td>{{selectedStation.originalObject.lat}}, {{selectedStation.originalObject.lon}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th translate>DAILY.ELEMENTS.TABLE.FMIID</th>
+                                        <td>{{selectedStation.originalObject.fmisid}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th translate>DAILY.ELEMENTS.TABLE.WMO</th>
+                                        <td>{{selectedStation.originalObject.wmo}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="large-6 columns">
+                        <ui-gmap-google-map ng-if="selectedStation" center='map.center' zoom='map.zoom'>
+                            <ui-gmap-marker coords="stationMarker.coords" idkey="stationMarker.id">
+                            </ui-gmap-marker>
+
+                        </ui-gmap-google-map>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="large-4 columns panel radius">
+                <p translate>DAILY.INSTRUCTIONS.STATIONS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 0">
+        <div class="row">
+            <h3 translate>DAILY.HEADERS.SELECT_DATASET</h3>
+        </div>
+        <div class="row">
+            <div class="large-8 columns">
+                <!-- Tähän datasettilistaus-->
+                <form name="datasetsform">
+                    <div class="radio-buttons" ng-repeat="ds in selectedStation.originalObject.datasets">
+                        <input  type="radio"
+                                name="datasets"
+                                ng-model="$parent.selectedDataset"
+                                ng-click="setDateLimits()"
+                                ng-value="ds"
+                                ng-change="setProcessStage()"
+                                id="{{ds.name}}">
+                        <label for="{{ds.name}}">{{ds.name}}</label>
+                    </div>
+                </form>
+
+            </div>
+
+                <div class="large-4 columns panel radius">
+                    <p translate>DAILY.INSTRUCTIONS.DATASET</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 1">
+        <div class="row">
+            <h3 translate>DAILY.HEADERS.SELECT_TIMESPAN</h3>
+            <p> <span translate>DAILY.ELEMENTS.DATARANGE</span> {{selectedDataset.begin | date : 'dd.MM.yyyy'}} - {{selectedDataset.end | date : 'dd.MM.yyyy'}} </p>
+        </div>
+        <div class="row">
+            <div class="large-8 columns">
+                <!-- Tähän timespan kontrollit-->
+                <form name="datarangeform">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Starting date</label>
+                            <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+                                <input ng-model="dateRange.begin"
+                                       class="error"
+                                       type="text"
+                                       name="begindate"
+                                       placeholder="{{selectedDataset.begin | date : 'dd.MM.yyyy'}}"
+                                       ng-change="validateDates(dateRange)"/>
+                                <small class="error" ng-show="dateRange.error.begin">{{dateRange.error.begin}} </small>
+                            </datepicker>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Ending date</label>
+
+                            <datepicker date-min-limit="{{selectedDataset.begin}}" date-max-limit="{{selectedDataset.end}}" date-set="{{defaultDate}}" date-format="dd.MM.yyyy">
+                                <input ng-model="dateRange.end"
+                                       class="error"
+                                       type="text"
+                                       name="enddate"
+                                       placeholder="{{selectedDataset.end | date : 'dd.MM.yyyy'}}"
+                                       ng-change="validateDates(dateRange)"/>
+                                <small class="error" ng-show="dateRange.error.end">{{dateRange.error.end}} </small>
+                            </datepicker>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="large-4 columns panel radius">
+                <p translate>DAILY.INSTRUCTIONS.TIMESPAN</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-download-phase1 fade-in-out" ng-show="processStage > 2">
+        <div class="row">
+            <h3 translate>DAILY.HEADERS.RETRIEVE_DATA</h3>
+        </div>
+        <div class="row">
+            <div class="large-8 columns">
+                <!-- Tähän timespan kontrollit-->
+                <button translate>DAILY.ELEMENTS.DOWNLOAD_BUTTON</button>
+            </div>
+
+            <div class="large-4 columns panel radius">
+                <p translate>DAILY.INSTRUCTIONS.RETRIEVE</p>
+            </div>
+        </div>
+    </div>
+        <!--
+        <div class="" ng-show="selectedStation">
+            You selected <span class="bold-span">{{selectedStation.title}}</span>
+        </div>
+        <a ui-sref="dailyWeather.list">Show List</a>
+        <div ui-view></div>
+        <hr/>
+        -->
+
+</div>
