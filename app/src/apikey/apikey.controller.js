@@ -8,7 +8,6 @@ angular.module('saaksiApp.apiKey')
 
         $scope.setKey = function() {
             $scope.apikey = $scope.apikey.replace(/\s/g, '');
-
             //validate the key by a call to FMI
             return fmiService.validateApiKey($scope.apikey).then(function(status) {
                 if (status.err) {

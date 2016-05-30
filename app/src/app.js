@@ -64,8 +64,7 @@ angular
         // Now set up the states
         $stateProvider
             .state('app', {
-                templateUrl: 'views/app.html',
-                controller: 'AppCtrl'
+                templateUrl: 'views/app.html'
             })
 
             .state('app.download', {
@@ -81,7 +80,7 @@ angular
 
             .state('app.download.dailyWeather', {
                 url: '/dailyweather',
-                templateUrl: 'partials/download/dailyweather.html',
+                templateUrl: 'src/dailyWeather/dailyweather.html',
                 controller: 'DailyWeatherCtrl',
                 apikeyRequired: true
             })

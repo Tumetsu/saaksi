@@ -8,8 +8,6 @@
             <p translate>APIKEY.EXPLANATION</p>
         </div>
 
-
-
         <div class="row">
             <div class="panel large-6 large-centered columns">
                 <h5 class="subheader" translate>APIKEY.HEADER</h5>
@@ -21,13 +19,18 @@
                     <li translate>APIKEY.INSTRUCTIONS.3</li>
                 </ol>
 
-
-
                 <form class="apikey-form" name="apikeyForm">
                     <div class="apikey-input">
 
-                        <input class="error" type="text" ng-model="apikey" required/>
-                        <small class="error" ng-show="invalidKeyError" translate=>APIKEY.INVALIDKEY</small>
+                        <input class="error" type="text"
+                               name="keyInput"
+                               ng-model="apikey"
+                               apikey-validator
+                               required/>
+                        <small class="error"
+                               ng-if="invalidKeyError"
+                               translate=>APIKEY.INVALIDKEY
+                        </small>
                         <p class="text-center"><small translate>APIKEY.INSTRUCTIONS.SAVEINFO</small>
                             <small translate>APIKEY.INSTRUCTIONS.MORE</small></p>
                         <button type="button" class="button" ng-click="setKey()" ng-disabled="apikeyForm.$invalid"  translate>APIKEY.INSTRUCTIONS.SAVE</button>
